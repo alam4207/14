@@ -117,7 +117,7 @@ function Combin_All() {
   ## 京喜财富岛(jd_cfd.js)
   export JDCFD_SHARECODES=$(Combin_Sub ForOtherCfd)
   ## 环球挑战赛(jd_global.js)
-  export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherGlobal)
+  ## export JDGLOBAL_SHARECODES=$(Combin_Sub ForOtherGlobal)
   ## 城城领现金(jd_city.js)
   export CITY_SHARECODES=$(Combin_Sub ForOtherCity)
   ## 京东健康(jd_health.js)
