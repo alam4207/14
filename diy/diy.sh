@@ -2,6 +2,7 @@
 ## Author: SuperManito
 ## Modified: 2021-5-24
 
+## 添加代理可能无法使用如非必需可以删除
 cat /etc/hosts | grep "raw.githubusercontent.com" -q
 if [ $? -ne 0 ]; then
   echo "199.232.28.133 raw.githubusercontent.com" >>/etc/hosts
