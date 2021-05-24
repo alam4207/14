@@ -438,6 +438,23 @@ ForOtherCfd4=""
 ForOtherCfd5=""
 ForOtherCfd6=""
 
+################################## 13. 定义城城领现金互助（选填） ##################################
+## 具体填法及要求详见本文件最下方“互助码填法示例”
+MyCity1=""
+MyCity2=""
+MyCity3=""
+MyCity4=""
+MyCity5=""
+MyCity6=""
+
+
+
+ForOtherCity1=""
+ForOtherCity2=""
+ForOtherCity3=""
+ForOtherCity4=""
+ForOtherCity5=""
+ForOtherCity6=""
 
 ################################## 13. 东东健康社区好友互助码互助码（选填） ##################################
 Jdhealth1=''
