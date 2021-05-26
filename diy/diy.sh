@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## Author: SuperManito
 ## Modified: 2021-5-24
-
+## lxk0301已更新jd_zoo.js,移除原jd_zoo.js
 ## 添加代理可能无法使用如非必需可以删除
 cat /etc/hosts | grep "raw.githubusercontent.com" -q
 if [ $? -ne 0 ]; then
@@ -15,7 +15,7 @@ fi
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="Public LongZhuZhu adolf  passerby-b jd28 "
+author_list="Public LongZhuZhu adolf  passerby-b "
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -26,7 +26,6 @@ scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
 scripts_base_url_2=https://gitee.com/mjf521/longzhuzhu/raw/main/qx/
 scripts_base_url_3=https://gitee.com/mjf521/dust/raw/dust/normal/
 scripts_base_url_4=https://gitee.com/mjf521/dust/raw/dust/member/
-scripts_base_url_5=https://gitee.com/mjf521/jd28/raw/master/
 #scripts_base_url_5=https://gitee.com/mjf521/JDDJ/raw/main/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
@@ -36,7 +35,6 @@ my_scripts_list_1="jd_paopao.js jx_cfdtx.js"
 my_scripts_list_2="jd_half_redrain.js jd_super_redrain.js"
 my_scripts_list_3="jx_superbox.js jx_oppo.js jx_urge.js jx_inter_shop_sign.js jx_shop_follow_sku.js jx_shop_lottery.js jx_pk.js jx_martin.js jx_mi.js jx_newInteraction.js"
 my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
-my_scripts_list_5="jd_zoo.js"
 #my_scripts_list_5="jddj_bean.js jddj_cookie.js"
 ##############################  随  机  函  数  ##############################
 rand() {
