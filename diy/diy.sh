@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 ## Author: SuperManito
-## Modified: 2021-5-24
-## lxk0301已更新jd_zoo.js,移除原jd_zoo.js
+## Modified: 2021-5-31
 ## 添加代理可能无法使用如非必需可以删除
 cat /etc/hosts | grep "raw.githubusercontent.com" -q
 if [ $? -ne 0 ]; then
