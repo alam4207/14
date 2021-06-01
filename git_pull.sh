@@ -125,14 +125,14 @@ function Change_ALL() {
 function Diff_Cron() {
   if [ -f ${ListCron} ]; then
     if [ -n "${JD_DIR}" ]; then
-      grep -E " [aj][drx]_\w+" ${ListCron} | perl -pe "s|.+ ([aj][drx]_\w+).*|\1|" | sort -u >${ListTask}
+      grep -E " j[drx]_\w+" ${ListCron} | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u >${ListTask}
     else
-      grep "${ShellDir}/" ${ListCron} | grep -E " [aj][drx]_\w+" | perl -pe "s|.+ ([aj][drx]_\w+).*|\1|" | sort -u >${ListTask}
+      grep "${ShellDir}/" ${ListCron} | grep -E " j[drx]_\w+" | perl -pe "s|.+ (j[drx]_\w+).*|\1|" | sort -u >${ListTask}
     fi
 
-    cat ${ListCronLxk} | grep -E "[aj][drx]_\w+\.js" | perl -pe "s|.+([aj][drx]_\w+)\.js.+|\1|" | sort -u >${ListJs}
+    cat ${ListCronLxk} | grep -E "j[drx]_\w+\.js" | perl -pe "s|.+(j[drx]_\w+)\.js.+|\1|" | sort -u >${ListJs}
     if [[ ${EnableExtraShell} == true ]]; then
-      cat ${FileDiy} | grep -v "#" | grep "my_scripts_list" | grep -io "[aj][drx]_[a-z]*\w[a-z]*" | sort -u >>${ListJs}
+      cat ${FileDiy} | grep -v "#" | grep "my_scripts_list" | grep -io "j[drx]_[a-z]*\w[a-z]*" | sort -u >>${ListJs}
     fi
 
     grep -vwf ${ListTask} ${ListJs} >${ListJsAdd}
@@ -286,7 +286,7 @@ function Add_Cron() {
       if [[ ${Cron} == jd_bean_sign ]]; then
         echo "4 0,9 * * * bash ${ShellJd} ${Cron}" >>${ListCron}
       else
-        cat ${ListCronLxk} | grep -E "\/${Cron}\." | perl -pe "s|(^.+)node */scripts/([aj][drx]_\w+)\.js.+|\1bash ${ShellJd} \2|" >>${ListCron}
+        cat ${ListCronLxk} | grep -E "\/${Cron}\." | perl -pe "s|(^.+)node */scripts/(j[drx]_\w+)\.js.+|\1bash ${ShellJd} \2|" >>${ListCron}
       fi
     done
 
@@ -342,7 +342,7 @@ function Run_All() {
   rm -rf ${ShellDir}/run-all.sh
   ## 默认将 "jd、jx、jr" 开头的活动脚本加入其中
   rm -rf ${ShellDir}/run_all.sh
-  bash ${ShellDir}/jd.sh | grep -io '[aj][drx]_[a-z].*' | grep -v 'bean_change' >${ShellDir}/run_all.sh
+  bash ${ShellDir}/jd.sh | grep -io 'j[drx]_[a-z].*' | grep -v 'bean_change' >${ShellDir}/run_all.sh
   sed -i "1i\jd_bean_change.js" ${ShellDir}/run_all.sh ## 置顶京豆变动通知
   sed -i "s#^#bash ${ShellDir}/jd.sh &#g" ${ShellDir}/run_all.sh
   sed -i 's#.js# now#g' ${ShellDir}/run_all.sh
