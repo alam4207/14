@@ -341,7 +341,7 @@ function Run_All() {
   rm -rf ${ShellDir}/run-all.sh
   ## 默认将 "jd、jx、jr" 开头的活动脚本加入其中
   rm -rf ${ShellDir}/run_all.sh
-  bash ${ShellDir}/jd.sh | grep -io 'j[drx]_[a-z].*' | grep -v 'bean_change' >${ShellDir}/run_all.sh
+  bash ${ShellDir}/jd.sh | grep -io '[aj][drx]_[a-z].*' | grep -v 'bean_change' >${ShellDir}/run_all.sh
   sed -i "1i\jd_bean_change.js" ${ShellDir}/run_all.sh ## 置顶京豆变动通知
   sed -i "s#^#bash ${ShellDir}/jd.sh &#g" ${ShellDir}/run_all.sh
   sed -i 's#.js# now#g' ${ShellDir}/run_all.sh
