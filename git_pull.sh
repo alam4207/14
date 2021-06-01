@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## Author: SuperManito
 ## Project: JD-FreeFuck
-## Modified: 2021-3-21
+## Modified: 2021-6-1
 
 ## 文件路径、脚本网址、文件版本以及各种环境的判断
 ShellDir=${JD_DIR:-$(
