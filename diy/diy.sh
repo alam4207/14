@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## Author: SuperManito
-## Modified: 2021-5-31
-## 添加代理可能无法使用如非必需可以删除
+## Modified: 2021-6-1
+## 添加柠檬脚本
 cat /etc/hosts | grep "raw.githubusercontent.com" -q
 if [ $? -ne 0 ]; then
   echo "199.232.28.133 raw.githubusercontent.com" >>/etc/hosts
@@ -14,7 +14,7 @@ fi
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="Public LongZhuZhu adolf  passerby-b "
+author_list="Public LongZhuZhu adolf  passerby-b  panghu"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
