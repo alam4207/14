@@ -2,15 +2,8 @@
 ## Author: SuperManito
 ## Modified: 2021-6-1
 ## 添加柠檬脚本,添加京喜工厂脚本
-cat /etc/hosts | grep "raw.githubusercontent.com" -q
-if [ $? -ne 0 ]; then
-  echo "199.232.28.133 raw.githubusercontent.com" >>/etc/hosts
-  echo "199.232.68.133 raw.githubusercontent.com" >>/etc/hosts
-  echo "185.199.108.133 raw.githubusercontent.com" >>/etc/hosts
-  echo "185.199.109.133 raw.githubusercontent.com" >>/etc/hosts
-  echo "185.199.110.133 raw.githubusercontent.com" >>/etc/hosts
-  echo "185.199.111.133 raw.githubusercontent.com" >>/etc/hosts
-fi
+
+
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
