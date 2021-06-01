@@ -25,7 +25,7 @@ scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
 scripts_base_url_2=https://gitee.com/mjf521/longzhuzhu/raw/main/qx/
 scripts_base_url_3=https://gitee.com/mjf521/dust/raw/dust/normal/
 scripts_base_url_4=https://gitee.com/mjf521/dust/raw/dust/member/
-#scripts_base_url_5=https://gitee.com/mjf521/JDDJ/raw/main/
+scripts_base_url_5=https://gitee.com/mjf521/ningmeng/raw/master/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
@@ -34,7 +34,7 @@ my_scripts_list_1="jd_paopao.js jx_cfdtx.js"
 my_scripts_list_2="jd_half_redrain.js jd_super_redrain.js"
 my_scripts_list_3="jx_jxhb.js jx_star.js jx_superbox.js jx_oppo.js jx_urge.js jx_inter_shop_sign.js jx_shop_follow_sku.js jx_shop_lottery.js jx_pk.js jx_martin.js jx_mi.js jx_newInteraction.js"
 my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
-#my_scripts_list_5="jddj_bean.js jddj_cookie.js"
+my_scripts_list_5="jd_ppdz.js"
 ##############################  随  机  函  数  ##############################
 rand() {
   min=$1
