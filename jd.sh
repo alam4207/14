@@ -16,7 +16,7 @@ FileConfSample=${ShellDir}/sample/config.sh.sample
 LogDir=${ShellDir}/log
 ListScripts=($(
   cd ${ScriptsDir}
-  ls *.js | grep -E "j[drx]_"
+  ls *.js | grep -E "[a-z][drx]_"
 ))
 ListCron=${ConfigDir}/crontab.list
 
