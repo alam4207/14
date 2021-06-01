@@ -38,7 +38,7 @@ my_scripts_list_3="jx_jxhb.js jx_star.js jx_superbox.js jx_oppo.js jx_urge.js jx
 my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
 my_scripts_list_5="jd_ppdz.js"
 my_scripts_list_6="jd_party_night.js"
-my_scripts_list_6="jd_jxfactory.js"
+my_scripts_list_7="jd_jxfactory.js"
 ##############################  随  机  函  数  ##############################
 rand() {
   min=$1
