@@ -12,6 +12,7 @@ ShellDir=${JD_DIR:-$(
 LogDir=${ShellDir}/log
 [ ! -d ${LogDir} ] && mkdir -p ${LogDir}
 ScriptsDir=${ShellDir}/scripts
+ScriptsDir1=${ShellDir}/jd28
 ConfigDir=${ShellDir}/config
 FileConf=${ConfigDir}/config.sh
 FileDiy=${ConfigDir}/diy.sh
@@ -77,6 +78,8 @@ function Git_PullScripts() {
   git reset --hard origin/master
   echo
 }
+
+git clone -b master ${ScriptsURL} ${ScriptsDir1}
 
 ## 用户数量UserSum
 function Count_UserSum() {
