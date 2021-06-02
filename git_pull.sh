@@ -28,7 +28,7 @@ ContentNewTask=${ShellDir}/new_task
 ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
-ScriptsURL=https://gitee.com/mjf521/jd28.git
+ScriptsURL=https://gitee.com/mjf521/jd_scrip.git
 
 ## 更新crontab，gitee服务器同一时间限制5个链接，因此每个人更新代码必须错开时间，每次执行git_pull随机生成。
 ## 每天次数随机，更新时间随机，更新秒数随机，至少6次，至多12次，大部分为8-10次，符合正态分布。
@@ -63,7 +63,7 @@ function Git_PullShell() {
 ## 克隆scripts
 function Git_CloneScripts() {
   echo -e "\n克隆 lxk0301 活动脚本：\n"
-  git clone -b main ${ScriptsURL} ${ScriptsDir}
+  git clone -b master ${ScriptsURL} ${ScriptsDir}
   ExitStatusScripts=$?
   echo
 }
