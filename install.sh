@@ -23,44 +23,7 @@ JD_BASE_BRANCH="source"
 ## 项目地址
 JD_BASE_URL="https://gitee.com/mjf521/JD-FreeFuck.git"
 ## 活动脚本库私钥
-KEY="-----BEGIN OPENSSH PRIVATE KEY-----
-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
------END OPENSSH PRIVATE KEY-----"
+KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIv7FZxe0S4okClF1lSf3ZUmWAKf3roI0bQcK6nStSktT9QIOACiIFuzYOZ2vcijXpbYXhEKrq7CW2jKenjQJjYkYBZtZR5s42bKwTOoUmSlV7u76pSteUHjYREXMuvlAELJOb57H/M+l6Z+LwgPc3cvSdmr5Oe99VjuyUzWo8ssN065vDppHRyVs0mV5i7hE/Ht1qny3/CKRrcy9OF/HAUhVHAoM+N6x81n6os1+aWZhGtrI0jDYf9jJFTTm3pyZ82UGqFi3oxUXXZTxMwqwIE3xsugcmxO/htWYAO95KHOdoakgb4GtizOdGc0d3aadaSClxbOEvs9YQTbllKalxIKgDgyUxQm0x5gzzeuxCkY/vBaQXT7mzzpYE6fzbKS7ibiILTZtNvvVfzDWsczti9yX+Urp5z8l70WkObCCX3Rae4g6Fr/gVn2bFmbNef7Q405yzjjyX2uRxYFjrOSIACH2Jgh9LpO55xav4oE7grG3QY/jZ/ODQbKjKEKPKHEc= 944725609@qq.com"
 ## ========================================================================================================
 
 
@@ -222,8 +185,8 @@ function PrivateKeyInstallation() {
     fi
     ## 安装私钥
     chmod 700 /root/.ssh
-    echo -e $KEY >/root/.ssh/id_rsa
-    chmod 600 /root/.ssh/id_rsa
+    echo -e $KEY >/root/.ssh/id_rsa.pub
+    chmod 600 /root/.ssh/id_rsa.pub
     ssh-keyscan gitee.com >/root/.ssh/known_hosts
 }
 
