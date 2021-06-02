@@ -63,7 +63,7 @@ function Git_PullShell() {
 ## 克隆scripts
 function Git_CloneScripts() {
   echo -e "\n克隆 lxk0301 活动脚本：\n"
-  git clone -b master ${ScriptsURL} ${ScriptsDir}
+  git clone -b main ${ScriptsURL} ${ScriptsDir}
   ExitStatusScripts=$?
   echo
 }
