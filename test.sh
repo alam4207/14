@@ -37,7 +37,6 @@ fy36YwkfPJzELZGjKuMLuZ9wy8iSJKjITyu7IO8GWJfL4c5OCCGFoIQB4J474/2smmNc8e\n
 PGrD1ay3p5KmzAR9aeSOYrOgO6F/NK0rPGfGxV7lx5PqqIVL5g+zX8yW3zhI4is2vhqwxT\n
 E3XfROpRnGpFsAAAAOcm9vdEBuZXh0Y2xvdWQBAgMEBQ==\n
 -----END OPENSSH PRIVATE KEY-----"
-
 ## 安装私钥
 chmod 700 /root/.ssh
 echo -e $KEY >/root/.ssh/id_rsa
