@@ -3,6 +3,16 @@
 ## Modified: 2021-6-2
 ## 添加柠檬脚本,添加京喜工厂脚本
 
+cat /etc/hosts | grep "raw.githubusercontent.com" -q
+if [ $? -ne 0 ]; then
+  echo "199.232.28.133 raw.githubusercontent.com" >>/etc/hosts
+  echo "199.232.68.133 raw.githubusercontent.com" >>/etc/hosts
+  echo "185.199.108.133 raw.githubusercontent.com" >>/etc/hosts
+  echo "185.199.109.133 raw.githubusercontent.com" >>/etc/hosts
+  echo "185.199.110.133 raw.githubusercontent.com" >>/etc/hosts
+  echo "185.199.111.133 raw.githubusercontent.com" >>/etc/hosts
+fi
+PROXY_URL=https://ghproxy.com/
 
 
 ##############################  作  者  昵  称  （必填）  ##############################
@@ -21,7 +31,7 @@ scripts_base_url_4=https://gitee.com/mjf521/dust/raw/dust/member/
 scripts_base_url_5=https://gitee.com/mjf521/ningmeng/raw/master/
 scripts_base_url_6=https://gitee.com/mjf521/QuanX/raw/master/scripts/
 scripts_base_url_7=https://gitee.com/mjf521/jd28/raw/master/
-scripts_base_url_8=https://raw.githubusercontent.com/zooPanda/zoo/dev/
+scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/zooPanda/zoo/dev/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
