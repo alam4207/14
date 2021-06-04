@@ -7,7 +7,7 @@
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx"
+author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx zooPanda"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -21,6 +21,7 @@ scripts_base_url_4=https://gitee.com/mjf521/dust/raw/dust/member/
 scripts_base_url_5=https://gitee.com/mjf521/ningmeng/raw/master/
 scripts_base_url_6=https://gitee.com/mjf521/QuanX/raw/master/scripts/
 scripts_base_url_7=https://gitee.com/mjf521/jd28/raw/master/
+scripts_base_url_8=https://raw.githubusercontent.com/zooPanda/zoo/dev/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
@@ -32,6 +33,7 @@ my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
 my_scripts_list_5="jd_ppdz.js"
 my_scripts_list_6="jd_party_night.js"
 my_scripts_list_7="jd_jxfactory.js"
+my_scripts_list_8="zooBaojiexiaoxiaole.js zooLongzhou.js zooOpencard01.js zooOpencard02.js zooOpencard03.js zooOpencard04.js"
 ##############################  随  机  函  数  ##############################
 rand() {
   min=$1
