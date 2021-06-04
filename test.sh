@@ -74,34 +74,10 @@ PGrD1ay3p5KmzAR9aeSOYrOgO6F/NK0rPGfGxV7lx5PqqIVL5g+zX8yW3zhI4is2vhqwxT\
 E3XfROpRnGpFsAAAAOcm9vdEBuZXh0Y2xvdWQBAgMEBQ==\
 
 -----END OPENSSH PRIVATE KEY-----"
-function PrivateKeyInstallation() {
-    mkdir -p /root/.ssh
-    ## 检测当前用户是否存在私钥，如存在执行备份操作
-    ls /root/.ssh | grep id_rsa.bak -wq
-    if [ $? -eq 0 ]; then
-        rm -rf /root/.ssh/id_rsa
-        echo -e ''
-        echo -e "\033[32m检测到已备份的私钥，跳过备份操作...... \033[0m"
-        echo -e ''
-        sleep 2s
-    else
-        mv /root/.ssh/id_rsa /root/.ssh/id_rsa.bak >/dev/null 2>&1
-    fi
-    ## 检测当前用户是否存在公钥，如存在执行备份操作
-    ls /root/.ssh | grep id_rsa.pub.bak -wq
-    if [ $? -eq 0 ]; then
-        rm -rf /root/.ssh/id_rsa.pub
-        echo -e ''
-        echo -e "\033[32m检测到已备份的公钥，跳过备份操作...... \033[0m"
-        echo -e ''
-        sleep 2s
-    else
-        mv /root/.ssh/id_rsa.pub /root/.ssh/id_rsa.pub.bak >/dev/null 2>&1
-    fi
-    ## 安装私钥
-    chmod 700 /root/.ssh
-    echo -e $KEY >/root/.ssh/id_rsa
-    chmod 600 /root/.ssh/id_rsa
-    ssh-keyscan gitee.com >/root/.ssh/known_hosts
-    ssh -T git@gitee.com
-}
+
+## 安装私钥
+chmod 700 /root/.ssh
+echo -e $KEY >/root/.ssh/id_rsa
+chmod 600 /root/.ssh/id_rsa
+ssh-keyscan gitee.com >/root/.ssh/known_hosts
+ssh -T git@gitee.com
