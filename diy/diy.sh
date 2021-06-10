@@ -17,7 +17,7 @@ PROXY_URL=https://ghproxy.com/
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx "
+author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -32,18 +32,21 @@ scripts_base_url_5=https://gitee.com/mjf521/ningmeng/raw/master/
 scripts_base_url_6=https://gitee.com/mjf521/QuanX/raw/master/scripts/
 scripts_base_url_7=https://gitee.com/mjf521/jd28/raw/master/
 scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
+scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
 my_scripts_list_1="jd_sqdyj.js jd_sq.js"
-my_scripts_list_2="jd_half_redrain.js jd_super_redrain.js"
+my_scripts_list_2="jd_half_redrain.js jd_super_redrain.js long_hby_lottery.js"
 my_scripts_list_3="jx_jxhb.js jx_star.js jx_superbox.js jx_oppo.js jx_urge.js jx_inter_shop_sign.js jx_shop_follow_sku.js jx_shop_lottery.js jx_pk.js jx_martin.js jx_mi.js jx_newInteraction.js"
 my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
 my_scripts_list_5="jd_ppdz.js"
 my_scripts_list_6="jd_party_night.js"
 my_scripts_list_7="jd_jxfactory.js"
-#my_scripts_list_8="jx_mc_coin.js"
+my_scripts_list_8="jx_mc_coin.js"
+my_scripts_list_9="ddo_pk.js"
+
 ##############################  随  机  函  数  ##############################
 rand() {
   min=$1
