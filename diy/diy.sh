@@ -38,7 +38,7 @@ scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/m
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
 my_scripts_list_1="jd_sqdyj.js jd_sq.js"
-my_scripts_list_2="jd_half_redrain.js jd_super_redrain.js long_hby_lottery.js"
+my_scripts_list_2="long_half_redrain.js long_super_redrain.js long_hby_lottery.js"
 my_scripts_list_3="jx_jxhb.js jx_star.js jx_superbox.js jx_oppo.js jx_urge.js jx_inter_shop_sign.js jx_shop_follow_sku.js jx_shop_lottery.js jx_pk.js jx_martin.js jx_mi.js jx_newInteraction.js"
 my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
 my_scripts_list_5="jd_ppdz.js"
@@ -98,3 +98,5 @@ done
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js
 rm -rf ${ScriptsDir}/jd_star.js
 rm -rf ${ScriptsDir}/zoo*
+rm -rf ${ScriptsDir}/jd_half_redrain.js 
+rm -rf ${ScriptsDir}/jd_super_redrain.js
