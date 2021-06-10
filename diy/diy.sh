@@ -32,7 +32,7 @@ scripts_base_url_5=https://gitee.com/mjf521/ningmeng/raw/master/
 scripts_base_url_6=https://gitee.com/mjf521/QuanX/raw/master/scripts/
 scripts_base_url_7=https://gitee.com/mjf521/jd28/raw/master/
 scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
-scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
+scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/
 scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
@@ -46,7 +46,7 @@ my_scripts_list_5="jd_ppdz.js"
 my_scripts_list_6="jd_party_night.js"
 my_scripts_list_7="jd_jxfactory.js"
 my_scripts_list_8="jx_mc_coin.js"
-my_scripts_list_9="ddo_pk.js"
+my_scripts_list_9="jd_try.js"
 my_scripts_list_10="jx_cfdtx.js jdJxncTokens.js"
 
 
