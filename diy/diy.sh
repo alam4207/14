@@ -17,7 +17,7 @@ PROXY_URL=https://ghproxy.com/
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo"
+author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -33,6 +33,7 @@ scripts_base_url_6=https://gitee.com/mjf521/QuanX/raw/master/scripts/
 scripts_base_url_7=https://gitee.com/mjf521/jd28/raw/master/
 scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
 scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
+scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
@@ -46,6 +47,8 @@ my_scripts_list_6="jd_party_night.js"
 my_scripts_list_7="jd_jxfactory.js"
 my_scripts_list_8="jx_mc_coin.js"
 my_scripts_list_9="ddo_pk.js"
+my_scripts_list_10="jx_cfdtx.js jdJxncTokens.js"
+
 
 ##############################  随  机  函  数  ##############################
 rand() {
