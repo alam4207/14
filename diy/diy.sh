@@ -101,5 +101,4 @@ done
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js
 rm -rf ${ScriptsDir}/jd_star.js
 rm -rf ${ScriptsDir}/zoo*
-rm -rf ${ScriptsDir}/jd_half_redrain.js 
-rm -rf ${ScriptsDir}/jd_super_redrain.js
+rm -rf ${ScriptsDir}/jx_urge.js
