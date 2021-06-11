@@ -83,7 +83,7 @@ function Git_PullScripts() {
   echo
 }
 
-wegt -q https://gitee.com/mjf521/JD-FreeFuck/raw/source/sendNotify.js -O ${ScriptsDir} --no-check-certificate
+
 ## 用户数量UserSum
 function Count_UserSum() {
   i=1
