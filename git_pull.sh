@@ -83,7 +83,7 @@ function Git_PullScripts() {
   echo
 }
 
-
+wegt -q https://gitee.com/mjf521/JD-FreeFuck/raw/source/sendNotify.js -O ${ScriptsDir} --no-check-certificate
 ## 用户数量UserSum
 function Count_UserSum() {
   i=1
@@ -313,7 +313,7 @@ function Add_Cron() {
     fi
   fi
 }
-wegt -q https://gitee.com/mjf521/JD-FreeFuck/raw/source/sendNotify.js -O ${ScriptsDir} --no-check-certificate
+
 ## 自定义脚本功能
 function ExtraShell() {
   ## 自动同步用户自定义的diy.sh
