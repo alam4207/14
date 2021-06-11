@@ -316,7 +316,7 @@ function Add_Cron() {
 function ExtraShell() {
   ## 自动同步用户自定义的diy.sh
   if [[ ${EnableExtraShellUpdate} == true ]]; then
-    wget -P ${FileDiy}  $EnableExtraShellURL -O diy.sh --no-check-certificate
+    wget -P $ConfigDir  $EnableExtraShellURL -O diy.sh --no-check-certificate
     if [ $? -eq 0 ]; then
       echo -e "自定义 DIY 脚本同步完成......"
       echo -e ''
