@@ -17,7 +17,7 @@ PROXY_URL=https://ghproxy.com/
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan star261"
+author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan star261  panghu"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -35,6 +35,9 @@ scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Scrip
 scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/
 scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
 scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
+scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
+scripts_base_url_13=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSyncScript/ZhiYi-N/Scripts/
+
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
@@ -51,8 +54,8 @@ my_scripts_list_8="jx_mc_coin.js"
 my_scripts_list_9="jd_try.js"
 my_scripts_list_10="jx_cfdtx.js jdJxncTokens.js"
 my_scripts_list_11="jd_zoo.js jd_zooCollect.js jd_zooMap.js"
-
-
+my_scripts_list_12="jd_sqdyj.js jd_sq.js jd_qqtmy.js jd_wsdlb.js jd_ry618.js"
+my_scripts_list_13="zy_618jc.js"
 
 ##############################  随  机  函  数  ##############################
 rand() {
