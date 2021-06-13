@@ -39,6 +39,8 @@ scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/panghu999/pang
 scripts_base_url_13=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSyncScript/ZhiYi-N/Scripts/
 
 
+
+
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
@@ -50,12 +52,13 @@ my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
 my_scripts_list_5="jd_ppdz.js"
 my_scripts_list_6="jd_party_night.js"
 my_scripts_list_7="jd_jxfactory.js"
-my_scripts_list_8="jx_mc_coin.js"
+my_scripts_list_8="jx_mc_coin.js jx_mc_emptycabbage.js"
 my_scripts_list_9="jd_try.js"
 my_scripts_list_10="jx_cfdtx.js jdJxncTokens.js"
 my_scripts_list_11="jd_zoo.js jd_zooCollect.js jd_zooMap.js"
 my_scripts_list_12="jd_sqdyj.js jd_sq.js jd_qqtmy.js jd_wsdlb.js jd_ry618.js"
 my_scripts_list_13="zy_618jc.js"
+
 
 ##############################  随  机  函  数  ##############################
 rand() {
