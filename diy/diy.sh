@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## Author: SuperManito
-## Modified: 2021-6-2
-## 添加柠檬脚本,添加京喜工厂脚本
+## Modified: 2021-6-13
+## 添加新的脚本
 
 cat /etc/hosts | grep "raw.githubusercontent.com" -q
 if [ $? -ne 0 ]; then
