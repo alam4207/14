@@ -150,7 +150,61 @@ for author in $author_list; do
     echo $url
     eval name=$js
     echo $name
+
+    if [ ${js} = "long_half_redrain.js" ]; then
+      eval name="jd_half_redrain.js "
+    elif [ ${js} = "long_hby_lottery.js" ]; then
+      eval name="jd_hby_lottery.js"
+    elif [ ${js} = "jd_zooMap.js" ]; then
+      eval name="jd_cute_animalsMap.js"
+    elif [ ${js} = "long_super_redrain.js" ]; then
+      eval name="jd_superbox.js "
+    elif [ ${js} = "jd_jxmc.js" ]; then
+      eval name="jx_pasture.js"
+    elif [ ${js} = "jd_zoo.js" ]; then
+      eval name="jd_cute_animals.js"
+    elif [ ${js} = "jd_zooCollect.js" ]; then
+      eval name="jd_cute_animalsCollect.js"
+    elif [ ${js} = "jd_zooMap.js" ]; then
+      eval name="jd_cute_animalsMap.js"
+    elif [ ${js} = "jd_star_shop.js" ]; then
+      eval name="jd_star_store.js"
+    elif [ ${js} = "adolf_flp.js" ]; then
+      eval name="jd_flp.js"
+    elif [ ${js} = "adolf_oneplus.js" ]; then
+      eval name="jd_oneplus.js"
+    elif [ ${js} = "adolf_superbox.js" ]; then
+      eval name="jd_superbox.js"
+
+    elif [ ${js} = "zooLongzhou.js" ]; then
+      eval name="jd_Longzhou.js"
+    elif [ ${js} = "zooSupershophf.js" ]; then
+      eval name="jd_Supershophf.js"
+    elif [ ${js} = "zooElecsport.js" ]; then
+      eval name="jd_Elecsport.js"
+    elif [ ${js} = "ddo_pk.js" ]; then
+      eval name="jd_pk.js"
+    elif [ ${js} = "zy_618jc.js" ]; then
+      eval name="jd_618jc.js
+    else
+      eval name=$js
+    fi
+
+
+
+
+
+
+
+
+
     wget -q --no-check-certificate $url -O scripts/$name.new
+
+
+
+
+
+
 
     # 如果上一步下载没问题，才去掉后缀".new"，如果上一步下载有问题，就保留之前正常下载的版本
     # 随机添加个cron到crontab.list
@@ -176,27 +230,10 @@ done
 
 ##############################  删  除  失  效  的  活  动  脚  本  ##############################
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js
-cp ${ScriptsDir}/long_half_redrain.js ${ScriptsDir}/jd_half_redrain.js 
-cp ${ScriptsDir}/long_hby_lottery.js ${ScriptsDir}/jd_hby_lottery.js
-cp ${ScriptsDir}/long_super_redrain.js ${ScriptsDir}/jd_super_redrain.js
 rm -rf ${ScriptsDir}/long_*
-
-cp ${ScriptsDir}/adolf_flp.js ${ScriptsDir}/jd_flp.js
-cp ${ScriptsDir}/adolf_oneplus.js ${ScriptsDir}/jd_oneplus.js
-cp ${ScriptsDir}/adolf_superbox.js ${ScriptsDir}/jd_superbox.js 
-rm -rf ${ScriptsDir}/adolf_*
-
 rm -rf ${ScriptsDir}/jddj_*
-
-cp ${ScriptsDir}/zooLongzhou.js ${ScriptsDir}/jd_zooLongzhou.js
-cp ${ScriptsDir}/zooSupershophf.js ${ScriptsDir}/jd_zooSupershophf.js
-cp ${ScriptsDir}/zooElecsport.js ${ScriptsDir}/jd_zooElecsport.js
 rm -rf ${ScriptsDir}/zoo*
-
-cp ${ScriptsDir}/ddo_pk.js ${ScriptsDir}/jd_pk.js
 rm -rf ${ScriptsDir}/ddo_pk*
-
-cp ${ScriptsDir}/zy_618jc.js ${ScriptsDir}/jd_618jc.js
 rm -rf ${ScriptsDir}/zy_*
 rm -rf ${ScriptsDir}/jx_shop_follow_sku.js
 
