@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## Author: SuperManito
 ## Project: JD-FreeFuck
-## Modified: 2021-6-1
+## Modified: 2021-6-16
 
 ## 文件路径、脚本网址、文件版本以及各种环境的判断
 ShellDir=${JD_DIR:-$(
@@ -29,7 +29,9 @@ ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 #ScriptsURL=https://gitee.com/mjf521/jd_scrip.git
+#docker部署的话使用下面这个地址
 #ScriptsURL=git@gitee.com:mjf521/jd_scrip.git
+#X86部署直接使用即可无需修改
 ScriptsURL=git@gitee.com:mjf521/jd_scripts-1.git
 
 
