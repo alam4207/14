@@ -17,27 +17,65 @@ PROXY_URL=https://ghproxy.com/
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan star261  panghu"
+#author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan star261  panghu"
+# 搬运大佬脚本开始
+
+author_list="MoPoQAQ LongZhuZhu adolf ZCY01 passerby-b Wenmoux zooPanda ddo Ariszy panghu MoPoQAQ star261"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 
-scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-scripts_base_url_2=https://gitee.com/mjf521/longzhuzhu/raw/main/qx/
-scripts_base_url_3=https://gitee.com/mjf521/dust/raw/dust/normal/
-scripts_base_url_4=https://gitee.com/mjf521/dust/raw/dust/member/
-scripts_base_url_5=https://gitee.com/mjf521/ningmeng/raw/master/
-scripts_base_url_6=https://gitee.com/mjf521/QuanX/raw/master/scripts/
-scripts_base_url_7=https://gitee.com/mjf521/jd28/raw/master/
-scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
-scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/
-scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
-scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
-scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-scripts_base_url_13=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSyncScript/ZhiYi-N/Scripts/
+#scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
 
+## 京喜财富岛提现（不用就注释掉定时任务）
+scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
+my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js"
+
+## 龙王，下点雨吧
+scripts_base_url_2=${PROXY_URL}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
+my_scripts_list_2="long_half_redrain.js long_super_redrain.js long_hby_lottery.js"
+
+## adolf
+scripts_base_url_3=${PROXY_URL}https://raw.githubusercontent.com/kinsonyan/jd_scripts/main/
+my_scripts_list_3="adolf_flp.js adolf_oneplus.js adolf_superbox.js"
+
+## 京东试用
+scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/SuperManito/jd_scripts/master/
+my_scripts_list_4="jd_try.js"
+
+## 京东到家
+scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ/main/
+my_scripts_list_5="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_fruit_code.js jddj_cookie.js"
+
+## Wenmoux
+scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
+my_scripts_list_6="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
+
+## zoo
+scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/zooPanda/zoo/dev/
+my_scripts_list_7="zooLongzhou.js zooSupershophf.js zooElecsport.js"
+
+## ddo
+scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
+my_scripts_list_8="ddo_pk.js"
+
+## 执意Ariszy
+scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSyncScript/ZhiYi-N/Scripts/
+my_scripts_list_9="zy_618jc.js"
+
+## 柠檬/panghu
+scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
+my_scripts_list_10="jd_sqdyj.js jd_sq.js jd_qqtmy.js jd_wsdlb.js jd_ry618.js"
+
+## moposmall
+scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
+my_scripts_list_11="jx_mc_coin.js jx_mc_emptycabbage.js"
+
+## star261（最新修复版脚本，可以注释lxk的定时任务了）
+scripts_base_url_12=${ExtraShellProxyUrl}https://raw.githubusercontent.com/star261/jd/main/scripts/
+my_scripts_list_12="jd_zoo.js jd_zooCollect.js jd_zooMap.js jd_jxmc.js jd_star_shop.js"
 
 
 
@@ -45,19 +83,7 @@ scripts_base_url_13=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSy
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="jd_sqdyj.js jd_sq.js"
-my_scripts_list_2="long_half_redrain.js long_super_redrain.js long_hby_lottery.js"
-my_scripts_list_3="jx_jxhb.js jx_star.js jx_superbox.js jx_oppo.js jx_urge.js jx_inter_shop_sign.js jx_shop_follow_sku.js jx_shop_lottery.js jx_pk.js jx_martin.js jx_mi.js jx_newInteraction.js"
-my_scripts_list_4="jx_flp.js jx_oneplus.js jx_pasture.js"
-my_scripts_list_5="jd_ppdz.js"
-my_scripts_list_6="jd_party_night.js"
-my_scripts_list_7="jd_jxfactory.js"
-my_scripts_list_8="jx_mc_coin.js jx_mc_emptycabbage.js"
-my_scripts_list_9="jd_try.js"
-my_scripts_list_10="jx_cfdtx.js jdJxncTokens.js"
-my_scripts_list_11="jd_zoo.js jd_zooCollect.js jd_zooMap.js"
-my_scripts_list_12="jd_sqdyj.js jd_sq.js jd_qqtmy.js jd_wsdlb.js jd_ry618.js"
-my_scripts_list_13="zy_618jc.js"
+#my_scripts_list_1="jd_sqdyj.js jd_sq.js"
 
 
 ##############################  随  机  函  数  ##############################
@@ -109,6 +135,32 @@ done
 
 ##############################  删  除  失  效  的  活  动  脚  本  ##############################
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js
-rm -rf ${ScriptsDir}/jd_star.js
+cp ${ScriptsDir}/long_half_redrain.js ${ScriptsDir}/jd_half_redrain.js 
+cp ${ScriptsDir}/long_hby_lottery.js ${ScriptsDir}/long_hby_lottery.js
+cp ${ScriptsDir}/long_super_redrain.js ${ScriptsDir}/jd_super_redrain.js
+rm -rf ${ScriptsDir}/long_*
+
+cp ${ScriptsDir}/adolf_flp.js ${ScriptsDir}/jd_flp.js
+cp ${ScriptsDir}/adolf_oneplus.js ${ScriptsDir}/jd_oneplus.js
+cp ${ScriptsDir}/adolf_superbox.js ${ScriptsDir}/jd_superbox.js 
+rm -rf ${ScriptsDir}/adolf_*
+
+rm -rf ${ScriptsDir}/jddj_*
+
+cp ${ScriptsDir}/zooLongzhou.js ${ScriptsDir}/jd_zooLongzhou.js
+cp ${ScriptsDir}/zooSupershophf.js ${ScriptsDir}/jd_zooSupershophf.js
+cp ${ScriptsDir}/zooElecsport.js ${ScriptsDir}/jd_zooElecsport.js
 rm -rf ${ScriptsDir}/zoo*
-rm -rf ${ScriptsDir}/jx_urge.js
+
+cp ${ScriptsDir}/ddo_pk.js ${ScriptsDir}/jd_pk.js
+rm -rf ${ScriptsDir}/ddo_pk*
+
+cp ${ScriptsDir}/zy_618jc.js ${ScriptsDir}/jd_618jc.js
+rm -rf ${ScriptsDir}/zy_*
+
+
+
+
+
+
+
