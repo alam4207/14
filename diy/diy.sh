@@ -177,7 +177,7 @@ done
 ##############################  删  除  失  效  的  活  动  脚  本  ##############################
 ## 删除旧版本失效的活动示例： rm -rf ${ScriptsDir}/jd_test.js
 cp ${ScriptsDir}/long_half_redrain.js ${ScriptsDir}/jd_half_redrain.js 
-cp ${ScriptsDir}/long_hby_lottery.js ${ScriptsDir}/long_hby_lottery.js
+cp ${ScriptsDir}/long_hby_lottery.js ${ScriptsDir}/jd_hby_lottery.js
 cp ${ScriptsDir}/long_super_redrain.js ${ScriptsDir}/jd_super_redrain.js
 rm -rf ${ScriptsDir}/long_*
 
