@@ -3,6 +3,47 @@
 ## Modified: 2021-6-13
 ## 添加新的脚本
 
+## 当前脚本清单（以脚本名前缀排序）
+##############################  京  东  商  城  ##############################
+## 列表格式： | 脚本名 | 活动名 | 备注内容 |
+
+## 短期或长期活动：
+# jd_try.js                    京东试用
+# jd_sqdyj.js                  省钱大赢家翻翻乐             （柠檬版）
+# jd_sq.js                     省钱大赢家翻翻乐获取邀请码
+# jd_wsdlb.js                  柠檬我是大老板农场           （需要种水果）
+# jd_SplitRedPacket.js         天降红包                    （默认助力第一个账号）
+# jd_limitBox.js               618限时盲盒
+# jd_cute_animals.js           动物联萌                    （最新修复版，不助力作者环境变量 export pKHelpAuthorFlag="false" ）
+# jd_cute_animalsCollect.js    动物联萌收集金币             （最新修复版）
+# jd_cute_animalsMap.js        618动物联萌                 （动物联萌，只做图鉴里的店铺任务）
+# jd_ry618.js                  华为荣耀618                 （此脚本不输出豆豆记录）
+# jd_star_store.js             明星小店                    （最新修复版）
+# jd_ddnc_farmpark.js          东东乐园
+# jx_pasture.js                京喜牧场                    （最新修复版）
+# jx_cfdtx.js                  京喜财富岛提现
+# jx_mc_coin.js                京喜牧场收集金币
+# jx_mc_emptycabbage.js        京喜牧场清空白菜
+# adolf_flp.js                 飞利浦电视成长记
+# adolf_oneplus.js             赢一加新品手机
+# adolf_superbox.js            京东超级盒子
+# ddo_pk.js                    京享值PK                     （新一期）
+# long_half_redrain.js         半点红包雨
+# long_super_redrain.js        整点红包雨
+# long_hby_lottery.js          618主会场红包雨
+# zy_618jc.js                  618手机竞猜
+# zooLongzhou.js               与"粽"不同                   （这个脚本名识别不正确）
+# zooSupershophf.js            合肥旗舰店开业
+# zooElecsport.js              东东电竞经理
+
+## 一次性活动脚本：
+# jd_qqtmy.js                  柠檬618惊奇探秘夜
+
+
+
+
+
+
 cat /etc/hosts | grep "raw.githubusercontent.com" -q
 if [ $? -ne 0 ]; then
   echo "199.232.28.133 raw.githubusercontent.com" >>/etc/hosts
