@@ -198,6 +198,7 @@ rm -rf ${ScriptsDir}/ddo_pk*
 
 cp ${ScriptsDir}/zy_618jc.js ${ScriptsDir}/jd_618jc.js
 rm -rf ${ScriptsDir}/zy_*
+rm -rf ${ScriptsDir}/jx_shop_follow_sku.js
 
 
 
