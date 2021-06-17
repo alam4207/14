@@ -115,7 +115,7 @@ scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Scri
 my_scripts_list_11="jx_mc_coin.js jx_mc_emptycabbage.js"
 
 ## star261（最新修复版脚本，可以注释lxk的定时任务了）
-scripts_base_url_12=${ExtraShellProxyUrl}https://raw.githubusercontent.com/star261/jd/main/scripts/
+scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
 my_scripts_list_12="jd_zoo.js jd_zooCollect.js jd_zooMap.js jd_jxmc.js jd_star_shop.js"
 
 
