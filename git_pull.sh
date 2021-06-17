@@ -29,7 +29,8 @@ ContentDropTask=${ShellDir}/drop_task
 SendCount=${ShellDir}/send_count
 isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 #ScriptsURL=https://gitee.com/mjf521/jd_scrip.git
-ScriptsURL=git@gitee.com:mjf521/jd_scrip.git
+#ScriptsURL=git@gitee.com:mjf521/jd_scrip.git
+ScriptsURL=git@gitee.com:mjf521/jd_scripts-1.git
 
 
 
