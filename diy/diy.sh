@@ -61,7 +61,7 @@ PROXY_URL=https://ghproxy.com/
 #author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan star261  panghu"
 # 搬运大佬脚本开始
 
-author_list="MoPoQAQ LongZhuZhu adolf ZCY01 passerby-b Wenmoux zooPanda ddo Ariszy panghu MoPoQAQ star261"
+author_list="MoPoQAQ LongZhuZhu adolf ZCY01  Wenmoux zooPanda ddo Ariszy panghu MoPoQAQ star261"
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -87,36 +87,36 @@ scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/SuperManito/jd_
 my_scripts_list_4="jd_try.js"
 
 ## 京东到家
-scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ/main/
-my_scripts_list_5="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_fruit_code.js jddj_cookie.js"
+#scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ/main/
+#my_scripts_list_5="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_fruit_code.js jddj_cookie.js"
 
 ## Wenmoux
-scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
-my_scripts_list_6="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
+scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
+my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
 
 ## zoo
-scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/zooPanda/zoo/dev/
-my_scripts_list_7="zooLongzhou.js zooSupershophf.js zooElecsport.js"
+scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/zooPanda/zoo/dev/
+my_scripts_list_6="zooLongzhou.js zooSupershophf.js zooElecsport.js"
 
 ## ddo
-scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
-my_scripts_list_8="ddo_pk.js"
+scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
+my_scripts_list_7="ddo_pk.js"
 
 ## 执意Ariszy
-scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSyncScript/ZhiYi-N/Scripts/
-my_scripts_list_9="zy_618jc.js"
+scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSyncScript/ZhiYi-N/Scripts/
+my_scripts_list_8="zy_618jc.js"
 
 ## 柠檬/panghu
-scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-my_scripts_list_10="jd_sqdyj.js jd_sq.js jd_qqtmy.js jd_wsdlb.js jd_ry618.js"
+scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
+my_scripts_list_9="jd_sqdyj.js jd_sq.js jd_qqtmy.js jd_wsdlb.js jd_ry618.js"
 
 ## moposmall
-scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
-my_scripts_list_11="jx_mc_coin.js jx_mc_emptycabbage.js"
+scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
+my_scripts_list_10="jx_mc_coin.js jx_mc_emptycabbage.js"
 
 ## star261（最新修复版脚本，可以注释lxk的定时任务了）
-scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
-my_scripts_list_12="jd_zoo.js jd_zooCollect.js jd_zooMap.js jd_jxmc.js jd_star_shop.js"
+scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
+my_scripts_list_11="jd_zoo.js jd_zooCollect.js jd_zooMap.js jd_jxmc.js jd_star_shop.js"
 
 
 
