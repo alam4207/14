@@ -185,7 +185,7 @@ for author in $author_list; do
     elif [ ${js} = "ddo_pk.js" ]; then
       eval name="jd_pk.js"
     elif [ ${js} = "zy_618jc.js" ]; then
-      eval name="jd_618jc.js
+      eval name="jd_618jc.js"
     else
       eval name=$js
     fi
