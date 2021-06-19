@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## Author: SuperManito
-## Modified: 2021-6-13
+## Modified: 2021-6-18
 ## 添加新的脚本
 
 ## 当前脚本清单（以脚本名前缀排序）
@@ -13,33 +13,35 @@
 # jd_sq.js                     省钱大赢家翻翻乐获取邀请码
 # jd_wsdlb.js                  柠檬我是大老板农场           （需要种水果）
 # jd_SplitRedPacket.js         天降红包                    （默认助力第一个账号）
-# jd_limitBox.js               618限时盲盒
-# jd_cute_animals.js           动物联萌                    （最新修复版，不助力作者环境变量 export pKHelpAuthorFlag="false" ）
-# jd_cute_animalsCollect.js    动物联萌收集金币             （最新修复版）
-# jd_cute_animalsMap.js        618动物联萌                 （动物联萌，只做图鉴里的店铺任务）
-# jd_ry618.js                  华为荣耀618                 （此脚本不输出豆豆记录）
 # jd_star_store.js             明星小店                    （最新修复版）
 # jd_ddnc_farmpark.js          东东乐园
 # jx_pasture.js                京喜牧场                    （最新修复版）
 # jx_cfdtx.js                  京喜财富岛提现
 # jx_mc_coin.js                京喜牧场收集金币
 # jx_mc_emptycabbage.js        京喜牧场清空白菜
-# adolf_flp.js                 飞利浦电视成长记
 # adolf_oneplus.js             赢一加新品手机
-# adolf_superbox.js            京东超级盒子
 # ddo_pk.js                    京享值PK                     （新一期）
 # long_half_redrain.js         半点红包雨
 # long_super_redrain.js        整点红包雨
-# long_hby_lottery.js          618主会场红包雨
-# zy_618jc.js                  618手机竞猜
-# zooLongzhou.js               与"粽"不同                   （这个脚本名识别不正确）
-# zooSupershophf.js            合肥旗舰店开业
 # zooElecsport.js              东东电竞经理
 
 ## 一次性活动脚本：
-# jd_qqtmy.js                  柠檬618惊奇探秘夜
 
-
+##############################  近  期  失  效  的  活  动  脚  本  ##############################
+## 活动过期或脚本失效
+# jd_superBrand.js
+# jd_qqtmy.js
+# jd_limitBox.js
+# jd_cute_animals.js
+# jd_cute_animalsCollect.js
+# jd_cute_animalsMap.js
+# jd_ry618.js
+# adolf_flp.js
+# adolf_superbox.js
+# long_hby_lottery.js
+# zy_618jc.js
+# zooLongzhou.js
+# zooSupershophf.js
 
 
 
@@ -70,53 +72,51 @@ author_list="MoPoQAQ LongZhuZhu adolf ZCY01  Wenmoux zooPanda ddo Ariszy panghu 
 
 #scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
 
+author_list="MoPoQAQ ZCY01 passerby-b LongZhuZhu adolf Wenmoux zooPanda ddo panghu MoPoQAQ star261"
+
 ## 京喜财富岛提现（不用就注释掉定时任务）
 scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
 my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js"
 
-## 龙王，下点雨吧
-scripts_base_url_2=${PROXY_URL}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
-my_scripts_list_2="long_half_redrain.js long_super_redrain.js long_hby_lottery.js"
-
-## adolf
-scripts_base_url_3=${PROXY_URL}https://raw.githubusercontent.com/kinsonyan/jd_scripts/main/
-my_scripts_list_3="adolf_flp.js adolf_oneplus.js adolf_superbox.js"
-
 ## 京东试用
-scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/SuperManito/jd_scripts/master/
-my_scripts_list_4="jd_try.js"
+scripts_base_url_2=https://gitee.com/SuperManito/scripts/raw/master/
+my_scripts_list_2="jd_try.js"
 
 ## 京东到家
-#scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ/main/
-#my_scripts_list_5="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_fruit_code.js jddj_cookie.js"
+scripts_base_url_3=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ/main/
+my_scripts_list_3="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_fruit_code.js jddj_cookie.js"
+
+## 龙王，下点雨吧
+scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
+my_scripts_list_4="long_half_redrain.js long_super_redrain.js"
+
+## adolf
+scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/kinsonyan/jd_scripts/main/
+my_scripts_list_5="adolf_oneplus.js"
 
 ## Wenmoux
-scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
-my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
+scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
+my_scripts_list_6="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
 
 ## zoo
-scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/zooPanda/zoo/dev/
-my_scripts_list_6="zooLongzhou.js zooSupershophf.js zooElecsport.js"
+scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/zooPanda/zoo/dev/
+my_scripts_list_7="zooElecsport.js"
 
 ## ddo
-scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
-my_scripts_list_7="ddo_pk.js"
-
-## 执意Ariszy
-scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/sngxpro/AutoSyncScript/ZhiYi-N/Scripts/
-my_scripts_list_8="zy_618jc.js"
+scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
+my_scripts_list_8="ddo_pk.js"
 
 ## 柠檬/panghu
 scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-my_scripts_list_9="jd_sqdyj.js jd_sq.js jd_qqtmy.js jd_wsdlb.js jd_ry618.js"
+my_scripts_list_9="jd_sqdyj.js jd_sq.js jd_wsdlb.js"
 
 ## moposmall
 scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
 my_scripts_list_10="jx_mc_coin.js jx_mc_emptycabbage.js"
 
-## star261（最新修复版脚本，可以注释lxk的定时任务了）
-scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
-my_scripts_list_11="jd_zoo.js jd_zooCollect.js jd_zooMap.js jd_jxmc.js jd_star_shop.js"
+## star261（部分最新修复版脚本，可以注释lxk的定时任务了）
+scripts_base_url_11=${ExtraShellProxyUrl}https://raw.githubusercontent.com/star261/jd/main/scripts/
+my_scripts_list_11="jd_jxmc.js jd_star_shop.js"
 
 
 
