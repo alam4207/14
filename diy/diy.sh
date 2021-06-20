@@ -72,7 +72,7 @@ PROXY_URL=https://ghproxy.com/
 
 #scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
 
-author_list="MoPoQAQ ZCY01 passerby-b LongZhuZhu adolf Wenmoux zooPanda ddo panghu MoPoQAQ star261 "
+author_list="MoPoQAQ ZCY01 passerby-b LongZhuZhu adolf Wenmoux zooPanda ddo panghu MoPoQAQ star261 jd"
 
 ## 京喜财富岛提现（不用就注释掉定时任务）
 scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
@@ -121,7 +121,9 @@ my_scripts_list_11="jd_jxmc.js jd_star_shop.js"
 ## Andy
 scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/zsm85887823/AndyJD/main/own/
 my_scripts_list_12="Andy_sendBeans.js"
-
+## Andy
+scripts_base_url_13=https://gitee.com/mjf521/jd_scripts-2/edit/master/
+my_scripts_list_13="jd_syj.js jd_ckcheck.js jd_syj.js jd_qqxing.js jd_qmwxj.js jd_wsdlb.js jd_zoolongzhou3.js"
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
