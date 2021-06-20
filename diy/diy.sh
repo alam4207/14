@@ -72,7 +72,7 @@ PROXY_URL=https://ghproxy.com/
 
 #scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
 
-author_list="MoPoQAQ ZCY01 passerby-b LongZhuZhu adolf Wenmoux zooPanda ddo panghu MoPoQAQ star261"
+author_list="MoPoQAQ ZCY01 passerby-b LongZhuZhu adolf Wenmoux zooPanda ddo panghu MoPoQAQ star261 "
 
 ## 京喜财富岛提现（不用就注释掉定时任务）
 scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
