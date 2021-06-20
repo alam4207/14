@@ -63,7 +63,7 @@ PROXY_URL=https://ghproxy.com/
 #author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan star261  panghu"
 # 搬运大佬脚本开始
 
-author_list="MoPoQAQ LongZhuZhu adolf ZCY01  Wenmoux zooPanda ddo Ariszy panghu MoPoQAQ star261"
+
 
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
@@ -114,10 +114,13 @@ my_scripts_list_9="jd_sqdyj.js jd_sq.js jd_wsdlb.js"
 scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
 my_scripts_list_10="jx_mc_coin.js jx_mc_emptycabbage.js"
 
-## star261（部分最新修复版脚本，可以注释lxk的定时任务了）
+## star261
 scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
 my_scripts_list_11="jd_jxmc.js jd_star_shop.js"
 
+## Andy
+scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/zsm85887823/AndyJD/main/own/
+my_scripts_list_12="Andy_sendBeans.js"
 
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
@@ -155,8 +158,8 @@ for author in $author_list; do
       eval name="jd_half_redrain.js "
     elif [ ${js} = "long_hby_lottery.js" ]; then
       eval name="jd_hby_lottery.js"
-    elif [ ${js} = "jd_zooMap.js" ]; then
-      eval name="jd_cute_animalsMap.js"
+    elif [ ${js} = "Andy_sendBeans.js" ]; then
+      eval name="jd_sendBeans.js"
     elif [ ${js} = "long_super_redrain.js" ]; then
       eval name="jd_superbox.js "
     elif [ ${js} = "jd_jxmc.js" ]; then
