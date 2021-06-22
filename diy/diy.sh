@@ -240,6 +240,8 @@ rm -rf ${ScriptsDir}/zoo*
 rm -rf ${ScriptsDir}/ddo_pk*
 rm -rf ${ScriptsDir}/zy_*
 rm -rf ${ScriptsDir}/jx_shop_follow_sku.js
+rm -rf ${ScriptsDir}/jd_xtg.js
+rm -rf ${ScriptsDir}/jd_xtg_help.js
 
 
 
