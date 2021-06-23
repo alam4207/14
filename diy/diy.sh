@@ -12,23 +12,21 @@
 # jd_sqdyj.js                  省钱大赢家翻翻乐             （柠檬版）
 # jd_sq.js                     省钱大赢家翻翻乐获取邀请码
 # jd_wsdlb.js                  柠檬我是大老板农场           （需要种水果）
-# jd_SplitRedPacket.js         天降红包                    （默认助力第一个账号）
-# jd_star_store.js             明星小店                    （最新修复版）
+# jd_SplitRedPacket.js         天降红包                     （默认助力第一个账号）
 # jd_ddnc_farmpark.js          东东乐园
-# jx_pasture.js                京喜牧场                    （最新修复版）
+# jd_necklace.js               点点券
 # jx_cfdtx.js                  京喜财富岛提现
 # jx_mc_coin.js                京喜牧场收集金币
 # jx_mc_emptycabbage.js        京喜牧场清空白菜
-# adolf_oneplus.js             赢一加新品手机
-# ddo_pk.js                    京享值PK                     （新一期）
+# Andy_sendBeans.js            送豆得豆
+# ddo_pk.js                    京享值PK
 # long_half_redrain.js         半点红包雨
 # long_super_redrain.js        整点红包雨
-# zooElecsport.js              东东电竞经理
+# star_dreamFactory_tuan.js    京喜工厂开团
 
 ## 一次性活动脚本：
 
-##############################  近  期  失  效  的  活  动  脚  本  ##############################
-## 活动过期或脚本失效
+##############################  近  期  删  除  的  活  动  脚  本  ##############################
 # jd_superBrand.js
 # jd_qqtmy.js
 # jd_limitBox.js
@@ -42,6 +40,24 @@
 # zy_618jc.js
 # zooLongzhou.js
 # zooSupershophf.js
+# adolf_oneplus.js
+# zooElecsport
+# jd_star_store.js
+# jx_pasture.js
+
+##############################  京  东  到  家  ##############################
+## jddj_fruit.js                京东到家 果园任务
+## jddj_fruit_collectWater.js   京东到家 果园水车
+## jddj_fruit_code.js           京东到家 果园获取互助码
+## jddj_getPoints.js            京东到家 庄园领水滴
+## jddj_bean.js                 京东到家 鲜豆任务
+## jddj_plantBeans.js           京东到家 鲜豆庄园
+
+## 京东到家需开通 "到家果园" 活动，自行挑选水果种植跟东东农场类似
+## 不想薅这个APP的羊毛就忽略这些脚本，顺便把定时任务注释掉
+
+## 京东到家账号环境变量（必填）：
+## export JDDJ_CKPATH="/jd/scripts/jdCookie.js"       必须指定路径否则会报错
 
 
 
@@ -72,11 +88,11 @@ PROXY_URL=https://ghproxy.com/
 
 #scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
 
-author_list="MoPoQAQ ZCY01 passerby-b LongZhuZhu adolf Wenmoux zooPanda ddo panghu MoPoQAQ star261 jd"
+author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ Andy ddo star261"
 
-## 京喜财富岛提现（不用就注释掉定时任务）
-scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
-my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js"
+## Public
+scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
+my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js jd_necklace.js"
 
 ## 京东试用
 scripts_base_url_2=https://gitee.com/SuperManito/scripts/raw/master/
@@ -86,42 +102,34 @@ my_scripts_list_2="jd_try.js"
 scripts_base_url_3=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ/main/
 my_scripts_list_3="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_fruit_code.js jddj_cookie.js"
 
-## 龙王，下点雨吧
+## 龙王
 scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
 my_scripts_list_4="long_half_redrain.js long_super_redrain.js"
 
-## adolf
-scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/kinsonyan/jd_scripts/main/
-my_scripts_list_5="adolf_oneplus.js"
-
 ## Wenmoux
-scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
-my_scripts_list_6="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
-
-## zoo
-scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/zooPanda/zoo/dev/
-my_scripts_list_7="zooElecsport.js"
-
-## ddo
-scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
-my_scripts_list_8="ddo_pk.js"
+scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
+my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
 
 ## 柠檬/panghu
-scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-my_scripts_list_9="jd_sqdyj.js jd_sq.js jd_wsdlb.js"
+scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
+my_scripts_list_6="jd_sqdyj.js jd_sq.js jd_wsdlb.js"
 
 ## moposmall
-scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
-my_scripts_list_10="jx_mc_coin.js jx_mc_emptycabbage.js"
+scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
+my_scripts_list_7="jx_mc_coin.js jx_mc_emptycabbage.js"
+
+## Andy
+scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/zsm85887823/AndyJD/main/own/
+my_scripts_list_8="Andy_sendBeans.js"
+
+## ddo
+scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
+my_scripts_list_9="ddo_pk.js"
 
 ## star261
-scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
-my_scripts_list_11="jd_jxmc.js jd_star_shop.js"
+scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
+my_scripts_list_10="star_dreamFactory_tuan.js"
 
-## Andy
-scripts_base_url_12=${PROXY_URL}https://raw.githubusercontent.com/zsm85887823/AndyJD/main/own/
-my_scripts_list_12="Andy_sendBeans.js"
-## Andy
 
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
@@ -188,8 +196,8 @@ for author in $author_list; do
       eval name="jd_Elecsport.js"
     elif [ ${js} = "ddo_pk.js" ]; then
       eval name="jd_pk.js"
-    elif [ ${js} = "zy_618jc.js" ]; then
-      eval name="jd_618jc.js"
+    elif [ ${js} = "star_dreamFactory_tuan.js" ]; then
+      eval name="jd_star_dreamFactory_tuan.js"
     else
       eval name=$js
     fi
