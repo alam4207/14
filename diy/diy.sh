@@ -88,7 +88,7 @@ PROXY_URL=https://ghproxy.com/
 
 #scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
 
-author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ Andy ddo star261 sheel"
+author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ Andy ddo star261 sheel QuanX"
 
 ## Public
 scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
@@ -131,7 +131,8 @@ scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/mai
 my_scripts_list_10="star_dreamFactory_tuan.js"
 scripts_base_url_11="https://gitee.com/mjf521/jd_scripts-2/raw/main/"
 my_scripts_list_11="getJDCookie.js"
-
+scripts_base_url_12=${PROXY_URL}"https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/"
+my_scripts_list_12="jd_joy_reward.js jd_joy.js jd_necklace.js"
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
