@@ -130,7 +130,7 @@ my_scripts_list_9="ddo_pk.js"
 scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
 my_scripts_list_10="star_dreamFactory_tuan.js"
 scripts_base_url_11="https://gitee.com/mjf521/jd_scripts-2/raw/main/"
-my_scripts_list_10="getJDCookie.js"
+my_scripts_list_11="getJDCookie.js"
 
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
