@@ -24,26 +24,27 @@
 # long_super_redrain.js        整点红包雨
 # star_dreamFactory_tuan.js    京喜工厂开团
 
-## 一次性活动脚本：
+## 短期或长期活动：
+# jd_try.js                    京东试用
+# jd_wsdlb.js                  柠檬我是大老板农场           （需要种水果）
+# jd_SplitRedPacket.js         天降红包                     （默认助力第一个账号）
+# jd_ddnc_farmpark.js          东东乐园
+# jd_qqxing.js                 QQ星系牧场                    (每次都要手动打开才能跑)
+# jd_europeancup.js            狂欢欧洲杯                    (默认第一个号给作者助力，后续号给第一个号助力)
+# jd_hwsx.js                   柠檬众筹好物上新
+# jx_cfdtx.js                  京喜财富岛提现
+# jx_mc_coin.js                京喜牧场收集金币
+# jx_mc_emptycabbage.js        京喜牧场清空白菜
+# Andy_sendBeans.js            送豆得豆
+# chinnkarahoi_jd_bookshop.js  口袋书店(修复版)
+# ddo_pk.js                    京享值PK
+# long_half_redrain.js         半点红包雨
+# long_super_redrain.js        整点红包雨
 
-##############################  近  期  删  除  的  活  动  脚  本  ##############################
-# jd_superBrand.js
-# jd_qqtmy.js
-# jd_limitBox.js
-# jd_cute_animals.js
-# jd_cute_animalsCollect.js
-# jd_cute_animalsMap.js
-# jd_ry618.js
-# adolf_flp.js
-# adolf_superbox.js
-# long_hby_lottery.js
-# zy_618jc.js
-# zooLongzhou.js
-# zooSupershophf.js
-# adolf_oneplus.js
-# zooElecsport
-# jd_star_store.js
-# jx_pasture.js
+## Python 脚本
+## 执行 python 脚本需要先手动安装环境，进容器执行懒人一键命令： apk --no-cache add -f python3 && cd /jd/scripts && pip3 install requests
+# jd_zjd.py                    赚京豆                        (号多才有用，默认给账号1助力，可填写助力全局变量 export zlzh=['','',''] ，值为pt_pin或用户名，将其填入单引号中)
+
 
 ##############################  京  东  到  家  ##############################
 ## jddj_fruit.js                京东到家 果园任务
@@ -90,9 +91,9 @@ PROXY_URL=https://ghproxy.com/
 
 author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ Andy ddo star261 sheel QuanX"
 
-## Public
+## 京喜财富岛z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z
 scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
-my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js jd_necklace.js"
+my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js"
 
 ## 京东试用
 scripts_base_url_2=https://gitee.com/SuperManito/scripts/raw/master/
@@ -108,11 +109,11 @@ my_scripts_list_4="long_half_redrain.js long_super_redrain.js"
 
 ## Wenmoux
 scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
-my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js"
+my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js jd_qqxing.js chinnkarahoi_jd_bookshop.js jd_europeancup.js"
 
 ## 柠檬/panghu
 scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-my_scripts_list_6="jd_sqdyj.js jd_sq.js jd_wsdlb.js"
+my_scripts_list_6="jd_wsdlb.js jd_hwsx.js"
 
 ## moposmall
 scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
@@ -126,13 +127,12 @@ my_scripts_list_8="Andy_sendBeans.js"
 scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
 my_scripts_list_9="ddo_pk.js"
 
-## star261
-scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/star261/jd/main/scripts/
-my_scripts_list_10="star_dreamFactory_tuan.js"
-scripts_base_url_11="https://gitee.com/mjf521/jd_scripts-2/raw/main/"
-my_scripts_list_11="getJDCookie.js"
-scripts_base_url_12=${PROXY_URL}"https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/"
-my_scripts_list_12="jd_necklace.js"
+## 皮卡丘
+scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/curtinlv/JD-Script/main/
+my_scripts_list_10="jd_zjd.py"
+
+scripts_base_url_11=${PROXY_URL}"https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/"
+my_scripts_list_11="jd_necklace.js"
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
