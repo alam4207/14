@@ -36,7 +36,7 @@ if [ "$(grep -c code.sh /ql/config/crontab.list)" = 0 ]; then
 fi
 
 # 下载 task_before.sh
-curl -s --connect-timeout 3 https://raw.githubusercontent.com/liuqitoday/qinglong-auto-sharecodes/master/task_before.sh > $task_before_shell_path
+curl -s --connect-timeout 3 https://ghproxy.com/https://raw.githubusercontent.com/liuqitoday/qinglong-auto-sharecodes/master/task_before.sh > $task_before_shell_path
 
 # 判断是否下载成功
 task_before_size=$(ls -l $task_before_shell_path | awk '{print $5}')
