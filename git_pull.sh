@@ -74,7 +74,7 @@ function Git_PullShell() {
 ## 克隆scripts
 function Git_CloneScripts() {
   echo -e "\n克隆 lxk0301 活动脚本：\n"
-  git clone -b master ${ScriptsURL} ${ScriptsDir}
+  git clone -b sc ${ScriptsURL} ${ScriptsDir}
   ExitStatusScripts=$?
   echo
 }
@@ -85,7 +85,7 @@ function Git_PullScripts() {
   cd ${ScriptsDir}
   git fetch --all
   ExitStatusScripts=$?
-  git reset --hard origin/sc
+  git reset --hard origin/master
   echo
 }
 
