@@ -32,11 +32,11 @@ isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 #docker部署的话使用下面这个地址
 #ScriptsURL=git@gitee.com:mjf521/jd_scrip.git
 #X86部署直接使用即可无需修改
-#ScriptsURL=git@gitee.com:mjf521/jd_scripts-1.git
+ScriptsURL=git@gitee.com:mjf521/jd_scripts-1.git
 #docker专用
 #ScriptsURL=git@gitee.com:mjf521/jd_scripts-2.git
 #实验
-ScriptsURL=git@gitee.com:mjf521/script-backup.git
+#ScriptsURL=git@gitee.com:mjf521/script-backup.git
 
 
 
@@ -74,7 +74,7 @@ function Git_PullShell() {
 ## 克隆scripts
 function Git_CloneScripts() {
   echo -e "\n克隆 lxk0301 活动脚本：\n"
-  git clone -b sc ${ScriptsURL} ${ScriptsDir}
+  git clone -b master ${ScriptsURL} ${ScriptsDir}
   ExitStatusScripts=$?
   echo
 }
