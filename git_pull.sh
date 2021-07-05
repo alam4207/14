@@ -36,7 +36,7 @@ isTermux=${ANDROID_RUNTIME_ROOT}${ANDROID_ROOT}
 #docker专用
 #ScriptsURL=git@gitee.com:mjf521/jd_scripts-2.git
 #实验
-git@gitee.com:mjf521/script-backup.git
+ScriptsURL=git@gitee.com:mjf521/script-backup.git
 
 
 
