@@ -23,7 +23,7 @@ chmod 755 $code_shell_path
 
 # 替换 code.sh 中的仓库作者名
 
-repoAuthor=${repoAuthor:-'JDHelloWorld'}
+repoAuthor=${repoAuthor:-'panghu999'}
 sed -i "s/chinnkarahoi/$repoAuthor/g" $code_shell_path
 
 # 将 code.sh 添加到定时任务
