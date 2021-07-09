@@ -10,7 +10,7 @@ if [ ! -a "$code_shell_path" ]; then
     touch $code_shell_path
 fi
 curl -s --connect-timeout 3 https://gitee.com/mjf521/JD-FreeFuck/raw/main/help/code.sh > $code_shell_path
-
+cp $code_shell_path $dir_shell/code.sh
 
 # 判断是否下载成功
 code_size=$(ls -l $code_shell_path | awk '{print $5}')
