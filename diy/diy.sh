@@ -3,64 +3,67 @@
 ## Modified: 2021-6-18
 ## 添加新的脚本
 
-## 当前脚本清单（以脚本名前缀排序）
+# 当前脚本清单（以脚本名前缀排序）
 ##############################  京  东  商  城  ##############################
-## 列表格式： | 脚本名 | 活动名 | 备注内容 |
+## 列表格式： | 脚本名 | 活动名 | 备注说明 |
 
 ## 短期或长期活动：
-# jd_try.js                    京东试用
-# jd_sqdyj.js                  省钱大赢家翻翻乐             （柠檬版）
-# jd_sq.js                     省钱大赢家翻翻乐获取邀请码
-# jd_wsdlb.js                  柠檬我是大老板农场           （需要种水果）
-# jd_SplitRedPacket.js         天降红包                     （默认助力第一个账号）
-# jd_ddnc_farmpark.js          东东乐园
-# jd_necklace.js               点点券
-# jx_cfdtx.js                  京喜财富岛提现
-# jx_mc_coin.js                京喜牧场收集金币
-# jx_mc_emptycabbage.js        京喜牧场清空白菜
-# Andy_sendBeans.js            送豆得豆
-# ddo_pk.js                    京享值PK
-# long_half_redrain.js         半点红包雨
-# long_super_redrain.js        整点红包雨
-# star_dreamFactory_tuan.js    京喜工厂开团
+# jd_try.js                    		             京东试用
+# jd_wsdlb.js                  	              柠檬我是大老板农场        	  （需要种水果）
+# jd_SplitRedPacket.js                  天降红包                         	（默认助力第一个账号）
+# jd_ddnc_farmpark.js                  东东乐园
+# jd_qqxing.js                               QQ星系牧场                     	(每次都要手动打开才能跑)
+# jd_europeancup.js                     狂欢欧洲杯                     		(默认第一个号给作者助力，后续号给第一个号助力)
+# jd_DrawEntrance.js                    天天优惠大乐透
+# jd_joy_park_help.js                    汪汪乐园每日助力
+# jd_sign_graphics.js                  	 京东签到图形验证
+# jd_summer_movement.js          燃动夏季                              (不助力作者 export summer_movement_ShHelpFlag="false" )
+# jd_wxFans.js                              超级粉丝互动
+# jd_goodMorning.js                   早起福利
+# jd_lsj.js                      				 京东零食街
+# jd_senbeans.js                          送豆得豆
+# jd_nzmh.js                                女装盲盒
+# jd_khyl.js                                   海尔开盒有礼
+# jd_pk.js 								       京享值PK
+# jx_cfdtx.js                                  京喜财富岛提现
+# jx_mc_coin.js                             京喜牧场收集金币
+# jx_mc_emptycabbage.js            京喜牧场清空白菜
+# jx_cfd_lottery.js                   		京喜财富岛-娱乐中心-抽奖
 
-## 短期或长期活动：
-# jd_try.js                    京东试用
-# jd_wsdlb.js                  柠檬我是大老板农场           （需要种水果）
-# jd_SplitRedPacket.js         天降红包                     （默认助力第一个账号）
-# jd_ddnc_farmpark.js          东东乐园
-# jd_qqxing.js                 QQ星系牧场                    (每次都要手动打开才能跑)
-# jd_europeancup.js            狂欢欧洲杯                    (默认第一个号给作者助力，后续号给第一个号助力)
-# jd_hwsx.js                   柠檬众筹好物上新
-# jx_cfdtx.js                  京喜财富岛提现
-# jx_mc_coin.js                京喜牧场收集金币
-# jx_mc_emptycabbage.js        京喜牧场清空白菜
-# Andy_sendBeans.js            送豆得豆
-# chinnkarahoi_jd_bookshop.js  口袋书店(修复版)
-# ddo_pk.js                    京享值PK
-# long_half_redrain.js         半点红包雨
-# long_super_redrain.js        整点红包雨
+# chinnkarahoi_jd_bookshop.js   口袋书店(修复版)
+# long_half_redrain.js                  半点红包雨
+# long_super_redrain.js               整点红包雨
 
-## Python 脚本
-## 执行 python 脚本需要先手动安装环境，进容器执行懒人一键命令： apk --no-cache add -f python3 && cd /jd/scripts && pip3 install requests
-# jd_zjd.py                    赚京豆                        (号多才有用，默认给账号1助力，可填写助力全局变量 export zlzh=['','',''] ，值为pt_pin或用户名，将其填入单引号中)
+## Python 脚本：
+# jd_qjd.py                                   抢京豆                            		(每个号可助力两次，20个号才能达到最高160豆，需在jd_cash.js前面跑才有用，需配合全局环境变量使用 export qjd_zlzh=['',''] )
+# jd_cashHelp.py                         签到领现金						       (需配合全局环境变量使用 export cash_zlzh=[''] )
 
+## 单引号中填入用户名（pt_pin的值）或中文昵称，理解不了就看脚本里的注释内容，多个号用逗号隔开
+## 脚本中的[xxxx]Cookie失效是配置文件中的例子，不影响执行，强迫症的话就把配置文件那部分删了
+
+## 一次性活动脚本：
+
+##############################  近  期  删  除  的  活  动  脚  本  ##############################
+
+# jd_zjd.py
+# jd_sign.js
+# jd_olympicgames.js
+# Andy_sendBeans.js
+# jd_hwsx.js
 
 ##############################  京  东  到  家  ##############################
-## jddj_fruit.js                京东到家 果园任务
-## jddj_fruit_collectWater.js   京东到家 果园水车
-## jddj_fruit_code.js           京东到家 果园获取互助码
-## jddj_getPoints.js            京东到家 庄园领水滴
-## jddj_bean.js                 京东到家 鲜豆任务
-## jddj_plantBeans.js           京东到家 鲜豆庄园
+
+## jddj_bean.js                            京东到家 鲜豆任务
+## jddj_fruit.js                             京东到家 果园任务
+## jddj_fruit_collectWater.js       京东到家 果园水车收水滴
+## jddj_plantBeans.js                  京东到家 鲜豆庄园
+## jddj_getPoints.js                    京东到家 鲜豆庄园收水滴
 
 ## 京东到家需开通 "到家果园" 活动，自行挑选水果种植跟东东农场类似
 ## 不想薅这个APP的羊毛就忽略这些脚本，顺便把定时任务注释掉
 
-## 京东到家账号环境变量（必填）：
-## export JDDJ_CKPATH="/jd/scripts/jdCookie.js"       必须指定路径否则会报错
-
-
+## 京东到家账号环境变量（必填，否则跑不了）：
+## export JDDJ_CKPATH="/jd/scripts/jdCookie.js"
 
 
 cat /etc/hosts | grep "raw.githubusercontent.com" -q
@@ -75,25 +78,15 @@ fi
 PROXY_URL=https://ghproxy.com/
 
 
-##############################  作  者  昵  称  （必填）  ##############################
-# 使用空格隔开
-#author_list="Public LongZhuZhu adolf  passerby-b  panghu QuanX jx me ddo jiulan star261  panghu"
-# 搬运大佬脚本开始
 
 
+##############################  作  者  昵  称  &  脚  本  地  址  &  脚  本  名  称  （必填）  ##############################
 
-##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
-# 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
-# 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
-# 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
+author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ curtinlv cdle smiek2221 Public"
 
-#scripts_base_url_1=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-
-author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ Andy ddo star261 sheel QuanX"
-
-## 京喜财富岛z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z'z
+## Public
 scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
-my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js"
+my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js jx_cfd_lottery.js jd_DrawEntrance.js jd_khyl.js"
 
 ## 京东试用
 scripts_base_url_2=https://gitee.com/SuperManito/scripts/raw/master/
@@ -101,38 +94,48 @@ my_scripts_list_2="jd_try.js"
 
 ## 京东到家
 scripts_base_url_3=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ/main/
-my_scripts_list_3="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_fruit_code.js jddj_cookie.js"
+my_scripts_list_3="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_cookie.js"
 
 ## 龙王
-scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
+# scripts_base_url_4=${PROXY_URL}}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
+scripts_base_url_4=${PROXY_URL}}https://raw.githubusercontent.com/Huang28/e/main/longzhuzhu/
 my_scripts_list_4="long_half_redrain.js long_super_redrain.js"
 
 ## Wenmoux
-scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
-my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js jd_qqxing.js chinnkarahoi_jd_bookshop.js jd_europeancup.js"
+scripts_base_url_5=${PROXY_URL}}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
+my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js jd_qqxing.js chinnkarahoi_jd_bookshop.js jd_europeancup.js jd_wxFans.js"
 
 ## 柠檬/panghu
-scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
-my_scripts_list_6="jd_wsdlb.js jd_hwsx.js"
+scripts_base_url_6=${PROXY_URL}}https://raw.githubusercontent.com/panghu999/panghu/master/
+my_scripts_list_6="jd_wsdlb.js jd_senbeans.js jd_pk.js"
 
 ## moposmall
-scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
+scripts_base_url_7=${PROXY_URL}}https://raw.githubusercontent.com/moposmall/Script/main/Me/
 my_scripts_list_7="jx_mc_coin.js jx_mc_emptycabbage.js"
 
-## Andy
-scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/zsm85887823/AndyJD/main/own/
-my_scripts_list_8="Andy_sendBeans.js"
+## curtinlv
+scripts_base_url_8=${PROXY_URL}}https://raw.githubusercontent.com/curtinlv/JD-Script/main/
+my_scripts_list_8="jd_qjd.py jd_cashHelp.py"
 
-## ddo
-scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/hyzaw/scripts/main/
-my_scripts_list_9="ddo_pk.js"
+## cdle
+scripts_base_url_9=${PROXY_URL}}https://raw.githubusercontent.com/cdle/jd_study/main/
+my_scripts_list_9="jd_joy_park_help.js jd_goodMorning.js jd_olympicgames.js"
 
-## 皮卡丘
-scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/curtinlv/JD-Script/main/
-my_scripts_list_10="jd_zjd.py"
+## smiek2221
+scripts_base_url_10=${PROXY_URL}}https://raw.githubusercontent.com/smiek2221/scripts/master/
+my_scripts_list_10="jd_sign_graphics.js jd_summer_movement.js"
 
-scripts_base_url_11=${PROXY_URL}"https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/"
-my_scripts_list_11="jd_necklace.js"
+## Public
+scripts_base_url_11=${PROXY_URL}}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
+my_scripts_list_11="jd_lsj.js jd_nzmh.js"
+
+
+
+
+
+
+
+
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
