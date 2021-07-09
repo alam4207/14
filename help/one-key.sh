@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 dir_shell=/ql/config
-
-code_shell_path=$dir_shell/code.sh
+dir_path=/ql/scripts
+code_shell_path=$dir_path/code.sh
 task_before_shell_path=$dir_shell/task_before.sh
 
 # 下载code.sh
