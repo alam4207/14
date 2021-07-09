@@ -9,7 +9,7 @@ task_before_shell_path=$dir_shell/task_before.sh
 if [ ! -a "$code_shell_path" ]; then
     touch $code_shell_path
 fi
-curl -s --connect-timeout 3 https://ghproxy.com/https://raw.githubusercontent.com/liuqitoday/qinglong-auto-sharecodes/master/code.sh > $code_shell_path
+curl -s --connect-timeout 3 http://nas.majunfei.club:50/api/v3/file/get/92180/code.sh?sign=acyw_EQb1HWEHkAYj21R_TcK_GPrY7Nz0EQFOkFQ1Ao%3D%3A0 > $code_shell_path
 
 # 判断是否下载成功
 code_size=$(ls -l $code_shell_path | awk '{print $5}')
@@ -36,7 +36,7 @@ if [ "$(grep -c code.sh /ql/config/crontab.list)" = 0 ]; then
 fi
 
 # 下载 task_before.sh
-curl -s --connect-timeout 3 https://ghproxy.com/https://raw.githubusercontent.com/liuqitoday/qinglong-auto-sharecodes/master/task_before.sh > $task_before_shell_path
+curl -s --connect-timeout 3 http://nas.majunfei.club:50/api/v3/file/get/92179/task_before.sh?sign=2A-nL41x0gIuZuQAfaeG0W9X3xYTEg6Y3KJGzxKPPZY%3D%3A0 > $task_before_shell_path
 
 # 判断是否下载成功
 task_before_size=$(ls -l $task_before_shell_path | awk '{print $5}')
