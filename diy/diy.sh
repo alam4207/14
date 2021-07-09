@@ -98,7 +98,7 @@ my_scripts_list_3="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_pl
 
 ## 龙王
 # scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
-scripts_base_url_4=${PROXY_URL}}https://raw.githubusercontent.com/Huang28/e/main/longzhuzhu/
+scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/Huang28/e/main/longzhuzhu/
 my_scripts_list_4="long_half_redrain.js long_super_redrain.js"
 
 ## Wenmoux
