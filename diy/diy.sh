@@ -97,36 +97,36 @@ scripts_base_url_3=${PROXY_URL}https://raw.githubusercontent.com/passerby-b/JDDJ
 my_scripts_list_3="jddj_fruit.js jddj_fruit_collectWater.js jddj_bean.js jddj_plantBeans.js jddj_getPoints.js jddj_cookie.js"
 
 ## 龙王
-# scripts_base_url_4=${PROXY_URL}}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
+# scripts_base_url_4=${PROXY_URL}https://raw.githubusercontent.com/longzhuzhu/nianyu/main/qx/
 scripts_base_url_4=${PROXY_URL}}https://raw.githubusercontent.com/Huang28/e/main/longzhuzhu/
 my_scripts_list_4="long_half_redrain.js long_super_redrain.js"
 
 ## Wenmoux
-scripts_base_url_5=${PROXY_URL}}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
+scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
 my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js jd_qqxing.js chinnkarahoi_jd_bookshop.js jd_europeancup.js jd_wxFans.js"
 
 ## 柠檬/panghu
-scripts_base_url_6=${PROXY_URL}}https://raw.githubusercontent.com/panghu999/panghu/master/
+scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
 my_scripts_list_6="jd_wsdlb.js jd_senbeans.js jd_pk.js"
 
 ## moposmall
-scripts_base_url_7=${PROXY_URL}}https://raw.githubusercontent.com/moposmall/Script/main/Me/
+scripts_base_url_7=${PROXY_URL}https://raw.githubusercontent.com/moposmall/Script/main/Me/
 my_scripts_list_7="jx_mc_coin.js jx_mc_emptycabbage.js"
 
 ## curtinlv
-scripts_base_url_8=${PROXY_URL}}https://raw.githubusercontent.com/curtinlv/JD-Script/main/
+scripts_base_url_8=${PROXY_URL}https://raw.githubusercontent.com/curtinlv/JD-Script/main/
 my_scripts_list_8="jd_qjd.py jd_cashHelp.py"
 
 ## cdle
-scripts_base_url_9=${PROXY_URL}}https://raw.githubusercontent.com/cdle/jd_study/main/
+scripts_base_url_9=${PROXY_URL}https://raw.githubusercontent.com/cdle/jd_study/main/
 my_scripts_list_9="jd_joy_park_help.js jd_goodMorning.js jd_olympicgames.js"
 
 ## smiek2221
-scripts_base_url_10=${PROXY_URL}}https://raw.githubusercontent.com/smiek2221/scripts/master/
+scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/smiek2221/scripts/master/
 my_scripts_list_10="jd_sign_graphics.js jd_summer_movement.js"
 
 ## Public
-scripts_base_url_11=${PROXY_URL}}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
+scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
 my_scripts_list_11="jd_lsj.js jd_nzmh.js"
 
 
