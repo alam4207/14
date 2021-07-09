@@ -69,7 +69,7 @@ MyCfd1=''
 ForOtherCfd1=""
 
 ## 东东健康社区：
-MyHealth1='"
+MyHealth1=''
 
 ForOtherHealth1=""
 
