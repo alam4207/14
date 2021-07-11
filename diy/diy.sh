@@ -103,7 +103,7 @@ my_scripts_list_4="long_half_redrain.js long_super_redrain.js"
 
 ## Wenmoux
 scripts_base_url_5=${PROXY_URL}https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/
-my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js jd_qqxing.js chinnkarahoi_jd_bookshop.js jd_europeancup.js jd_wxFans.js"
+my_scripts_list_5="jd_SplitRedPacket.js jd_ddnc_farmpark.js jd_qqxing.js chinnkarahoi_jd_bookshop.js  jd_wxFans.js"
 
 ## 柠檬/panghu
 scripts_base_url_6=${PROXY_URL}https://raw.githubusercontent.com/panghu999/panghu/master/
@@ -258,7 +258,7 @@ rm -rf ${ScriptsDir}/jd_xtg_help.js
 rm -rf ${ScriptsDir}/jd_joy.js
 rm -rf ${ScriptsDir}/jd_joy_reward.js
 rm -rf ${ScriptsDir}/*jd_enen.js
-rm -rf ${ScriptsDir}/jd_europeancup.js
+
 
 
 
