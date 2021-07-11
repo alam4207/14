@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#Build 20210711-002
+#Build 20210711-003
 
 ## 导入通用变量与函数
 dir_shell=/ql/shell
@@ -58,9 +58,9 @@ diy_help_rules(){
 ## 设定值为 BreakHelpType="1" 表示启用屏蔽模式；不填或填其他内容表示不开启功能。
 ## 自定义屏蔽账号序号或序号区间。当 BreakHelpType="1"时生效。
 ## 设定值为一个或多个不相同正整数，每个正整数不大于账号总数；也可以设置正整数区间，最大正整数不大于账号总数；
-## 如：a) 设定为 BreakHelpNum="3" 表示从第 3 个账号不被助力；
-##     b) 设定为 BreakHelpNum="5 7 8 10" 表示从第 5 7 8 10 个账号均不被助力；
-##     c) 设定为 BreakHelpNum="6-12" 表示从第 6 个账号到第 12 个账号均不被助力；
+## 如：a) 设定为 BreakHelpNum="3" 表示第 3 个账号不被助力；
+##     b) 设定为 BreakHelpNum="5 7 8 10" 表示第 5 7 8 10 个账号均不被助力；
+##     c) 设定为 BreakHelpNum="6-12" 表示从第 6 至 12 个账号均不被助力；
 ##     d) 设定为 BreakHelpNum="4 9-14 15~18 19_21" 表示第4个账号、第9至14账号、第15至18账号、第19至21账号均不被助力。注意序号区间连接符仅支持 - ~ _；
 ## 不按示例填写可能引发报错。
 BreakHelpType="0"                  ## 屏蔽模式
@@ -198,7 +198,7 @@ export_codes_sub() {
     local BreakHelpInterval=$(echo $BreakHelpNum | perl -pe "{s|~|-|; s|_|-|}" | sed 's/\(\d\+\)-\(\d\+\)/{\1..\2}/g')
     local BreakHelpNumArray=($(eval echo $BreakHelpInterval))
     local BreakHelpNumVerify=$(echo $BreakHelpNum | sed 's/ //g' | perl -pe "{s|-||; s|~||; s|_||}" | sed 's/^\d\+$//g')
-    local i j k m n pt_pin_in_log code tmp_grep tmp_my_code tmp_for_other user_num random_num_list
+    local i j k m n t pt_pin_in_log code tmp_grep tmp_my_code tmp_for_other user_num random_num_list
     local envs=$(eval echo "\$JD_COOKIE")
     local array=($(echo $envs | sed 's/&/ /g'))
     local user_sum=${#array[*]}
@@ -243,11 +243,10 @@ export_codes_sub() {
                     j=$((m + 1))
                     if [ $BreakHelpType = 1 ]; then
                         if [ "$BreakHelpNumVerify" = "" ]; then
-                            if [[ "${BreakHelpNumArray[@]}" =~ "$j" ]]; then
-                                tmp_for_other="$tmp_for_other"
-                            elif [[ ! "${BreakHelpNumArray[@]}" =~ "$j" ]]; then
-                                tmp_for_other="$tmp_for_other@\${$config_name_my$j}"
-                            fi
+                            for ((t = 0; t < ${#BreakHelpNumArray[*]}; t++)); do
+                                [[ "${BreakHelpNumArray[t]}" = "$j" ]] && continue 2
+                            done
+                            tmp_for_other="$tmp_for_other@\${$config_name_my$j}"
                         else
                             echo -e "\n#$cur_time 变量值填写不规范，请检查后重试！"
                             tmp_for_other="$tmp_for_other@\${$config_name_my$j}"
@@ -278,11 +277,10 @@ export_codes_sub() {
                         fi
                         if [ $BreakHelpType = 1 ]; then
                             if [ "$BreakHelpNumVerify" = "" ]; then
-                                if [[ "${BreakHelpNumArray[@]}" =~ "$k" ]]; then
-                                    tmp_for_other="$tmp_for_other"
-                                elif [[ ! "${BreakHelpNumArray[@]}" =~ "$k" ]]; then
-                                    tmp_for_other="$tmp_for_other@\${$config_name_my$k}"
-                                fi
+                                for ((t = 0; t < ${#BreakHelpNumArray[*]}; t++)); do
+                                    [[ "${BreakHelpNumArray[t]}" = "$k" ]] && continue 2
+                                done
+                                tmp_for_other="$tmp_for_other@\${$config_name_my$k}"
                             else
                                 echo -e "\n#$cur_time 变量值填写不规范，请检查后重试！"
                                 tmp_for_other="$tmp_for_other@\${$config_name_my$k}"
@@ -306,11 +304,10 @@ export_codes_sub() {
                         [[ $j -eq $n ]] && continue
                         if [ $BreakHelpType = 1 ]; then
                             if [ "$BreakHelpNumVerify" = "" ]; then
-                                if [[ "${BreakHelpNumArray[@]}" =~ "$n" ]]; then
-                                    tmp_for_other="$tmp_for_other"
-                                elif [[ ! "${BreakHelpNumArray[@]}" =~ "$n" ]]; then
-                                    tmp_for_other="$tmp_for_other@\${$config_name_my$n}"
-                                fi
+                                for ((t = 0; t < ${#BreakHelpNumArray[*]}; t++)); do
+                                    [[ "${BreakHelpNumArray[t]}" = "$n" ]] && continue 2
+                                done
+                                tmp_for_other="$tmp_for_other@\${$config_name_my$n}"
                             else
                                 echo -e "\n#$cur_time 变量值填写不规范，请检查后重试！"
                                 tmp_for_other="$tmp_for_other@\${$config_name_my$n}"
@@ -334,11 +331,10 @@ export_codes_sub() {
                         k=$((n + 1))
                         if [ $BreakHelpType = 1 ]; then
                             if [ "$BreakHelpNumVerify" = "" ]; then
-                                if [[ "${BreakHelpNumArray[@]}" =~ "$k" ]]; then
-                                    tmp_for_other="$tmp_for_other"
-                                elif [[ ! "${BreakHelpNumArray[@]}" =~ "$k" ]]; then
-                                    tmp_for_other="$tmp_for_other@\${$config_name_my$k}"
-                                fi
+                                for ((t = 0; t < ${#BreakHelpNumArray[*]}; t++)); do
+                                    [[ "${BreakHelpNumArray[t]}" = "$k" ]] && continue 2
+                                done
+                                tmp_for_other="$tmp_for_other@\${$config_name_my$k}"
                             else
                                 echo -e "\n#$cur_time 变量值填写不规范，请检查后重试！"
                                 tmp_for_other="$tmp_for_other@\${$config_name_my$k}"
@@ -384,7 +380,7 @@ export_all_codes() {
             ;;
         esac
     fi
-    [[ $BreakHelpType = 1 ]] && echo -e "\n#$cur_time 您已启用屏蔽助力功能！"
+    [[ $BreakHelpType = 1 ]] && echo -e "\n#$cur_time 您已启用屏蔽模式，账号 $BreakHelpNum 将不被助力！"
     if [ "$ps_num" -gt 7 ]; then
         echo -e "\n#$cur_time 检测到 code.sh 的线程过多 ，请稍后再试！"
         exit
@@ -587,6 +583,7 @@ log_time=$(date "+%Y-%m-%d-%H-%M-%S")
 log_path="$dir_code/$log_time.log"
 make_dir "$dir_code"
 ps_num="$(ps | grep code.sh | grep -v grep | wc -l)"
+[[ ! -z "$(ps -ef|grep -w 'code.sh'|grep -v grep)" ]] && ps -ef|grep -w 'code.sh'|grep -v grep|awk '{print $3}'|xargs kill -9
 export_all_codes | perl -pe "{s|京东种豆|种豆|; s|crazyJoy任务|疯狂的JOY|}" | tee $log_path
 sleep 5
 update_help
