@@ -142,8 +142,10 @@ my_scripts_list_11="jd_lsj.js jd_nzmh.js"
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
 #my_scripts_list_1="jd_sqdyj.js jd_sq.js"
-
-
+echo "开始修复宠汪汪脚本"
+cd /opt/jd/scripts && npm i -S png-js
+cd /opt/jd
+echo "修复完成！"
 ##############################  随  机  函  数  ##############################
 rand() {
   min=$1
