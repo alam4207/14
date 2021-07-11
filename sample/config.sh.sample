@@ -33,7 +33,7 @@ Cookie3=""
 Cookie4=""
 Cookie5=""
 Cookie6=""
-
+export JD_COOKIE='$Cookie1','$Cookie2'
 
 ################################## 临时屏蔽某个Cookie（选填） ##################################
 ## 如果某些Cookie已经失效了，但暂时还没法更新，可以使用此功能在不删除该Cookie和重新修改Cookie编号的前提下，临时屏蔽掉某些编号的Cookie
