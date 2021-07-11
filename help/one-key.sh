@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 dir_shell=/ql/config
-dir_script=/ql/scripts
+dir_script=/ql/config
 code_shell_path=$dir_script/code.sh
 task_before_shell_path=$dir_shell/task_before.sh
 
@@ -34,7 +34,7 @@ if [ "$(grep -c code.sh /ql/config/crontab.list)" = 0 ]; then
     echo "开始添加 task code.sh"
     # 获取token
     token=$(cat /ql/config/auth.json | jq --raw-output .token)
-    curl -s -H 'Accept: application/json' -H "Authorization: Bearer $token" -H 'Content-Type: application/json;charset=UTF-8' -H 'Accept-Language: zh-CN,zh;q=0.9' --data-binary '{"name":"生成内部互助码","command":"task code.sh","schedule":"6 7 * * *"}' --compressed 'http://127.0.0.1:5700/api/crons?t=1624782068473'
+    curl -s -H 'Accept: application/json' -H "Authorization: Bearer $token" -H 'Content-Type: application/json;charset=UTF-8' -H 'Accept-Language: zh-CN,zh;q=0.9' --data-binary '{"name":"生成内部互助码","command":"bash /ql/config/code.sh","schedule":"*/10 * * * *"}' --compressed 'http://127.0.0.1:5700/api/crons?t=1624782068473'
 fi
 
 # 下载 task_before.sh
