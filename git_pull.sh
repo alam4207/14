@@ -37,7 +37,7 @@ ScriptsURL=git@gitee.com:mjf521/jd_scripts-1.git
 #ScriptsURL=git@gitee.com:mjf521/jd_scripts-2.git
 #实验
 #ScriptsURL=git@gitee.com:mjf521/script-backup.git
-ScriptsURL=git@gitee.com:mjf521/zoo.git
+#ScriptsURL=git@gitee.com:mjf521/zoo.git
 
 
 
