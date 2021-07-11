@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#Build 20210711-001
+#Build 20210711-002
 
 ## 导入通用变量与函数
 dir_shell=/ql/shell
@@ -590,3 +590,6 @@ ps_num="$(ps | grep code.sh | grep -v grep | wc -l)"
 export_all_codes | perl -pe "{s|京东种豆|种豆|; s|crazyJoy任务|疯狂的JOY|}" | tee $log_path
 sleep 5
 update_help
+
+## 修改curtinlv京东超市兑换脚本的参数
+sed -i "s/cookies=''/cookies='$JD_COOKIE'/g" /ql/scripts/*_jd_blueCoin.py
