@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#Build 20210710-001
+#Build 20210711-001
 
 ## 导入通用变量与函数
 dir_shell=/ql/shell
@@ -419,8 +419,8 @@ local i j k
 if [ -z "$(cat $file_task_before | grep "^$config_name_my\d")" ]; then
    echo -e "\n${config_name_my}1=''\n" >> $file_task_before
 fi
-for ((i=1; i<=$user_sum; i++)); do
-    if [ ! -z "$(cat $log_path | grep "^$config_name_my$i=.*'$")" ]; then
+for ((i=1; i<=100; i++)); do
+    if [[ $i -le $user_sum ]] && [[ ! -z "$(cat $log_path | grep "^$config_name_my$i=.*'$")" ]]; then
         new_code="$(cat $log_path | grep "^$config_name_my$i=.*'$" | sed "s/.*'\(.*\)'.*/\1/")"
         old_code="$(cat $file_task_before | grep "^$config_name_my$i=.*'$" | sed "s/.*'\(.*\)'.*/\1/")"
         if [ -z "$(grep "^$config_name_my$i" $file_task_before)" ]; then
@@ -432,14 +432,17 @@ for ((i=1; i<=$user_sum; i++)); do
             fi
         fi
     fi
+    if [[ $i -gt $user_sum ]] && [[ ! -z "$(cat $file_task_before | grep "^$config_name_my$i")" ]]; then
+        sed -i "/^$config_name_my$i/d" $file_task_before
+    fi
 done
 
 #更新配置文件中的互助规则
 if [ -z "$(cat $file_task_before | grep "^$config_name_for_other\d")" ]; then
    echo -e "${config_name_for_other}1=\"\"\n" >> $file_task_before
 fi
-for ((j=1; j<=$user_sum; j++)); do
-    if [ ! -z "$(cat $log_path | grep "^$config_name_for_other$j=.*\"$")" ]; then
+for ((j=1; j<=100; j++)); do
+    if [[ $j -le $user_sum ]] && [[ ! -z "$(cat $log_path | grep "^$config_name_for_other$j=.*\"$")" ]]; then
         new_rule="$(cat $log_path | grep "^$config_name_for_other$j=.*\"$" | sed "s/.*\"\(.*\)\".*/\1/")"
         old_rule="$(cat $file_task_before | grep "^$config_name_for_other$j=.*\"$" | sed "s/.*\"\(.*\)\".*/\1/")"
         if [ -z "$(grep "^$config_name_for_other$j" $file_task_before)" ]; then
@@ -450,6 +453,9 @@ for ((j=1; j<=$user_sum; j++)); do
                 sed -i "s/^$config_name_for_other$j=\"$old_rule\"$/$config_name_for_other$j=\"$new_rule\"/" $file_task_before
             fi
         fi
+    fi
+    if [[ $j -gt $user_sum ]] && [[ ! -z "$(cat $file_task_before | grep "^$config_name_for_other$j")" ]]; then
+        sed -i "/^$config_name_for_other$j/d" $file_task_before
     fi
 done
 }
@@ -467,8 +473,8 @@ local i j k
 if [ -z "$(cat $file_task_before | grep "^$config_name\d")" ]; then
    echo -e "\n${config_name}1=''\n" >> $file_task_before
 fi
-for ((k=1; k<=$user_sum; k++)); do
-    if [ ! -z "$(cat $log_path | grep "^$config_name$k=.*'$")" ]; then
+for ((k=1; k<=100; k++)); do
+    if [[ $k -le $user_sum ]] && [[ ! -z "$(cat $log_path | grep "^$config_name$k=.*'$")" ]]; then
         new_code="$(cat $log_path | grep "^$config_name$k=.*'$" | sed "s/.*'\(.*\)'.*/\1/")"
         old_code="$(cat $file_task_before | grep "^$config_name$k=.*'$" | sed "s/.*'\(.*\)'.*/\1/")"
         if [ -z "$(grep "^$config_name$k" $file_task_before)" ]; then
@@ -479,6 +485,9 @@ for ((k=1; k<=$user_sum; k++)); do
                 sed -i "s/^$config_name$k='$old_code'$/$config_name$k='$new_code'/" $file_task_before
             fi
         fi
+    fi
+    if [[ $k -gt $user_sum ]] && [[ ! -z "$(cat $file_task_before | grep "^$config_name$k")" ]]; then
+        sed -i "/^$config_name$k/d" $file_task_before
     fi
 done
 }
