@@ -258,7 +258,7 @@ rm -rf ${ScriptsDir}/jd_xtg_help.js
 rm -rf ${ScriptsDir}/jd_joy.js
 rm -rf ${ScriptsDir}/jd_joy_reward.js
 rm -rf ${ScriptsDir}/*jd_enen.js
-
+rm -rf ${ScriptsDir}/jd_europeancup.js
 
 
 
