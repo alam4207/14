@@ -82,7 +82,7 @@ PROXY_URL=https://ghproxy.com/
 
 ##############################  作  者  昵  称  &  脚  本  地  址  &  脚  本  名  称  （必填）  ##############################
 
-author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ curtinlv cdle smiek2221 Public"
+author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ curtinlv cdle smiek2221 Public xincafg"
 
 ## Public
 scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
@@ -133,9 +133,9 @@ my_scripts_list_11="jd_lsj.js jd_nzmh.js"
 
 
 
+scripts_base_url_12=https://gitee.com/mjf521/JD-FreeFuck/raw/main/help/
 
-
-
+my_scripts_list_12="jd_cfd_new.js"
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
