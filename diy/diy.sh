@@ -149,8 +149,8 @@ cd /opt/jd
 echo "修复完成！"
 
 echo "开始修复京东签到环境"
-cd /opt/jd/scripts && npm instll axios &
-cd /opt/jd/scripts && npm instll date-fns &
+cd /opt/jd/scripts && npm install axios &
+cd /opt/jd/scripts && npm install date-fns &
 cd /opt/jd
 
 echo "修复完成！"
