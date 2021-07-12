@@ -86,7 +86,7 @@ author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ curtinlv 
 
 ## Public
 scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
-my_scripts_list_1="jx_cfdtx.js jdJxncTokens.js jx_cfd_lottery.js jd_DrawEntrance.js jd_khyl.js"
+my_scripts_list_1=" jdJxncTokens.js jx_cfd_lottery.js jd_DrawEntrance.js jd_khyl.js"
 
 ## 京东试用
 scripts_base_url_2=https://gitee.com/SuperManito/scripts/raw/master/
