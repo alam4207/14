@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-#Build 20210703-001
-## 上次导入时间：2021年07月09日 23:46:36
+#Build 20210712-001
+
 ## 东东农场：
 MyFruit1=''
-
 
 ForOtherFruit1=""
 
@@ -14,27 +13,31 @@ MyPet1=''
 
 ForOtherPet1=""
 
+
 ## 种豆得豆：
 MyBean1=''
 
-
 ForOtherBean1=""
+
 
 ## 京喜工厂：
 MyDreamFactory1=''
 
 ForOtherDreamFactory1=""
+
+
 ## 东东工厂：
 MyJdFactory1=''
 
-
 ForOtherJdFactory1=""
+
 
 ## 疯狂的JOY：
 MyJoy1=''
 
-
 ForOtherJoy1=""
+
+
 ## 京东赚赚：
 MyJdzz1=''
 
@@ -44,8 +47,9 @@ ForOtherJdzz1=""
 ## 京喜农场：
 MyJxnc1=''
 
-
 ForOtherJxnc1=""
+
+
 ## 口袋书店：
 MyBookShop1=''
 
@@ -55,23 +59,26 @@ ForOtherBookShop1=""
 ## 签到领现金：
 MyCash1=''
 
-
 ForOtherCash1=""
+
 
 ## 闪购盲盒：
 MySgmh1=''
 
-
 ForOtherSgmh1=""
+
 
 ## 京喜财富岛：
 MyCfd1=''
+
 ForOtherCfd1=""
+
 
 ## 东东健康社区：
 MyHealth1=''
 
 ForOtherHealth1=""
+
 
 ## 京东手机狂欢城：
 MyCarni1=''
@@ -138,6 +145,11 @@ combine_sub() {
     local array=($(echo $envs | sed 's/&/ /g'))
     local user_sum=${#array[*]}
     for ((i = 1; i <= $user_sum; i++)); do
+        for num in ${TempBlockCookie}; do
+            if [[ $i -eq $num ]]; then
+             continue 2
+            fi
+        done
         local tmp1=$what_combine$i
         local tmp2=${!tmp1}
         combined_all="$combined_all&$tmp2"
@@ -155,15 +167,8 @@ combine_all() {
     done
 }
 
-#if [[ $(ls $dir_code) ]]; then
-#    latest_log=$(ls -r $dir_code | head -1)
-#    . $dir_code/$latest_log
-    combine_all
-#fi
-
 ## 临时屏蔽某账号运行活动脚本
 TempBlock_JD_COOKIE(){
-    . /$file_env
     local envs=$(eval echo "\$JD_COOKIE")
     local array=($(echo $envs | sed 's/&/ /g'))
     for i in $TempBlockCookie; do
@@ -175,5 +180,8 @@ TempBlock_JD_COOKIE(){
 
 TempBlock_JD_COOKIE
 
-
-
+#if [[ $(ls $dir_code) ]]; then
+#    latest_log=$(ls -r $dir_code | head -1)
+#    . $dir_code/$latest_log
+    combine_all
+#fi
