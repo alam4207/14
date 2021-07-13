@@ -135,7 +135,7 @@ my_scripts_list_11="jd_lsj.js jd_nzmh.js"
 
 scripts_base_url_12=https://gitee.com/mjf521/JD-FreeFuck/raw/main/help/
 
-my_scripts_list_12="jd_cfd_new.js"
+my_scripts_list_12="jd_cfd.js"
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
