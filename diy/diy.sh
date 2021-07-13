@@ -82,7 +82,7 @@ PROXY_URL=https://ghproxy.com/
 
 ##############################  作  者  昵  称  &  脚  本  地  址  &  脚  本  名  称  （必填）  ##############################
 
-author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ curtinlv cdle smiek2221 Public xincafg"
+author_list="Public ZCY01 passerby-b LongZhuZhu Wenmoux panghu MoPoQAQ curtinlv cdle smiek2221 Public xincafg wenmou"
 
 ## Public
 scripts_base_url_1=https://gitee.com/SuperManito/scripts/raw/master/
@@ -128,7 +128,6 @@ my_scripts_list_10="jd_sign_graphics.js jd_summer_movement.js"
 ## Public
 scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
 my_scripts_list_11="jd_lsj.js jd_nzmh.js"
-
 
 
 
@@ -205,8 +204,8 @@ for author in $author_list; do
     elif [ ${js} = "adolf_superbox.js" ]; then
       eval name="jd_superbox.js"
 
-    elif [ ${js} = "zooLongzhou.js" ]; then
-      eval name="jd_Longzhou.js"
+    elif [ ${js} = " chinnkarahoi_jd_bookshop.js " ]; then
+      eval name="jd_bookshop.js"
     elif [ ${js} = "zooSupershophf.js" ]; then
       eval name="jd_Supershophf.js"
     elif [ ${js} = "zooElecsport.js" ]; then
