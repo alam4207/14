@@ -123,7 +123,7 @@ my_scripts_list_9="jd_joy_park_help.js jd_goodMorning.js jd_olympicgames.js"
 
 ## smiek2221
 scripts_base_url_10=${PROXY_URL}https://raw.githubusercontent.com/smiek2221/scripts/master/
-my_scripts_list_10="jd_sign_graphics.js jd_summer_movement.js"
+my_scripts_list_10="jd_sign_graphics.js jd_summer_movement.js gua_wealth_island.js"
 
 ## Public
 scripts_base_url_11=${PROXY_URL}https://raw.githubusercontent.com/jiulan/platypus/main/scripts/
@@ -199,8 +199,8 @@ for author in $author_list; do
       eval name="jd_star_store.js"
     elif [ ${js} = "adolf_flp.js" ]; then
       eval name="jd_flp.js"
-    elif [ ${js} = "adolf_oneplus.js" ]; then
-      eval name="jd_oneplus.js"
+    elif [ ${js} = "gua_wealth_island.js" ]; then
+      eval name="jd_island.js"
     elif [ ${js} = "adolf_superbox.js" ]; then
       eval name="jd_superbox.js"
 
